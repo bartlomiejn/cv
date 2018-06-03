@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import imageutils
 
 
 def clear_canvas():

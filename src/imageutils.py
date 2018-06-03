@@ -18,7 +18,7 @@ def parsed_args():
     return vars(ap.parse_args())
 
 
-def arg_image():
+def image_arg():
     """Attempts to retrieve image at `-i` command-line argument."""
     args = parsed_args()
     return cv2.imread(args["image"])

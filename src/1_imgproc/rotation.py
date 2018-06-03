@@ -13,7 +13,7 @@ def rotated(image, degrees, x_offset=None, y_offset=None):
     return cv2.warpAffine(image, rot_mat, (w, h))
 
 
-image = imageutils.arg_image()
+image = imageutils.image_arg()
 cv2.imshow("Original", image)
 cv2.imshow("Rotated by 45 degrees counter-clockwise", rotated(image, 45))
 cv2.imshow("Rotated by 45 degrees c-c minus 50px offset on both axis", rotated(image, 45, x_offset=-50, y_offset=-50))

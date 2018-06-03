@@ -2,7 +2,7 @@ import imageutils
 from imageutils import Axis
 import cv2
 
-image = imageutils.arg_image()
+image = imageutils.image_arg()
 h_flipped = cv2.flip(image, flipCode=Axis.HORIZONTAL)
 v_flipped = cv2.flip(image, flipCode=Axis.VERTICAL)
 flipped = cv2.flip(image, flipCode=Axis.BOTH)

@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_imgproc/arithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_imgproc/arithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_imgproc/flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_imgproc/flip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_imgproc/rotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_imgproc/rotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_imgproc/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_imgproc/translation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/imageutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageutils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,11 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitwise_ops.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bitwise_ops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="15">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masking.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_imgproc/masking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -151,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/1_imgproc/arithm.py" />
         <option value="$PROJECT_DIR$/src/imageutils.py" />
         <option value="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" />
+        <option value="$PROJECT_DIR$/src/1_imgproc/masking.py" />
       </list>
     </option>
   </component>
@@ -218,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bitwise_ops">
+  <component name="RunManager" selected="Python.masking">
     <configuration name="arithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,7 +310,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="scale" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="masking" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,26 +322,26 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/scale.py" />
-      <option name="PARAMETERS" value="-i ../assets/florida_trip_small.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/masking.py" />
+      <option name="PARAMETERS" value="-i ../../assets/florida_trip.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.scale" />
       <item itemvalue="Python.flip" />
       <item itemvalue="Python.crop" />
       <item itemvalue="Python.arithm" />
       <item itemvalue="Python.bitwise_ops" />
+      <item itemvalue="Python.masking" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.masking" />
         <item itemvalue="Python.bitwise_ops" />
         <item itemvalue="Python.arithm" />
         <item itemvalue="Python.crop" />
         <item itemvalue="Python.flip" />
-        <item itemvalue="Python.scale" />
       </list>
     </recent_temporary>
   </component>
@@ -343,16 +362,17 @@
     <frame x="678" y="22" width="762" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2625" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20555556" side_tool="true" visible="true" weight="0.32734805" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20694445" side_tool="true" visible="true" weight="0.32596686" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79444444" visible="true" weight="0.32734805" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79305553" visible="true" weight="0.32596686" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2625" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49722221" weight="0.32734805" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -362,7 +382,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49880382" weight="0.32797858" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -503,6 +522,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -513,10 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py">
+    <entry file="file://$PROJECT_DIR$/src/1_imgproc/masking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="383">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

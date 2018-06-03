@@ -11,7 +11,7 @@ print("cv2.subtract mins out at 0: {}".format(cv_min0))
 print("np + wraps around: {}".format(np_maxwrap))
 print("np - wraps around: {}".format(np_minwrap))
 
-image = imageutils.arg_image()
+image = imageutils.image_arg()
 addition = np.ones(image.shape, dtype="uint8") * 75
 subtraction = np.ones(image.shape, dtype="uint8") * 50
 added_img = cv2.add(image, addition)
