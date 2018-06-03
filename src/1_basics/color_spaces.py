@@ -19,6 +19,10 @@ def compare_hsv(rgb_image):
 
 
 def compare_lab(rgb_image):
+    """
+    L* - Lightness, a* - blue-yellow scale, b* red-green scale.
+    Euclidean distance has perceptual meaning.
+    """
     lab_image = cv2.cvtColor(rgb_image, cv2.COLOR_BGR2LAB)
     cv2.imshow("L*a*b*", lab_image)
     for (name, chan) in zip(("L*", "a*", "b*"), cv2.split(lab_image)):
