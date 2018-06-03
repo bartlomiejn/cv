@@ -1,15 +1,7 @@
-import argparse
+from imageutils import arg_image
 import cv2
 
-
-def parsed_args():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--image", required=True, help="Path to the image")
-    return vars(ap.parse_args())
-
-
-args = parsed_args()
-image = cv2.imread(args["image"])
+image = arg_image()
 (h, w) = image.shape[:2]
 print(image.shape)
 (cX, cY) = (w / 2, h / 2)

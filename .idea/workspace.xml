@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.ropeproject/globalnames" beforeDir="false" afterPath="$PROJECT_DIR$/.ropeproject/globalnames" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_imgproc/rot_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_imgproc/rot_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_imgproc/rotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_imgproc/rotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_imgproc/scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_imgproc/scale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_imgproc/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_imgproc/translation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,14 +17,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="scale.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="scale.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4_imgproc/scale.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="185">
+              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imageutils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4_imgproc/imageutils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4_imgproc/translation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#1#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flip.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4_imgproc/flip.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rot_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,10 +78,10 @@
       <file leaf-file-name="rotation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4_imgproc/rotation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="49" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,15 +107,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4_imgproc/rot_test.py" />
         <option value="$PROJECT_DIR$/4_imgproc/scale.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/imgparser.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/img_arg_parser.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/rot_test.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/rotation.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/imageutils.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/translation.py" />
+        <option value="$PROJECT_DIR$/4_imgproc/flip.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="562" />
+    <option name="x" value="678" />
     <option name="y" value="22" />
-    <option name="width" value="878" />
+    <option name="width" value="762" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -97,7 +153,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,7 +172,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scale">
+  <component name="RunManager" selected="Python.flip">
+    <configuration name="flip" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_imgproc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/flip.py" />
+      <option name="PARAMETERS" value="-i ../assets/florida_trip.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="rot_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +222,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/scale.py" />
-      <option name="PARAMETERS" value="-i ../assets/wynn.png" />
+      <option name="PARAMETERS" value="-i ../assets/florida_trip_small.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -156,9 +230,11 @@
     <list>
       <item itemvalue="Python.rot_test" />
       <item itemvalue="Python.scale" />
+      <item itemvalue="Python.flip" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flip" />
         <item itemvalue="Python.scale" />
         <item itemvalue="Python.rot_test" />
       </list>
@@ -178,59 +254,143 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="562" y="22" width="878" height="821" extended-state="0" />
+    <frame x="678" y="22" width="762" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2357631" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22638889" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50341684" side_tool="true" visible="true" weight="0.32797858" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.375" side_tool="true" visible="true" weight="0.32734805" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49658313" visible="true" weight="0.32797858" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.625" visible="true" weight="0.32734805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49913645" weight="0.5809906" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="201" height="582" id="Documentation" order="3" side_tool="true" weight="0.32868022" />
+      <window_info anchor="right" x="0" y="0" width="201" height="582" id="Documentation" order="4" side_tool="true" weight="0.32868022" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49950248" weight="0.32909605" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49880382" weight="0.32797858" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/4_imgproc/scale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/4_imgproc/rotation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="165">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/flip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/scale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/rotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#1#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/4_imgproc/scale.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="185">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/rotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#1#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/imageutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/flip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>

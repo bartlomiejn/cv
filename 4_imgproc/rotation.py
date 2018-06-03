@@ -1,26 +1,20 @@
-import argparse
+import imageutils
 import cv2
 
 
-def parsed_args():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--image", required=True, help="Path to the image")
-    return vars(ap.parse_args())
+def rotated(image, degrees, x_offset=None, y_offset=None):
+    (h, w) = image.shape[:2]
+    (cX, cY) = (w / 2, h / 2)
+    if x_offset is int:
+        cX += x_offset
+    if y_offset is int:
+        cY += y_offset
+    rot_mat = cv2.getRotationMatrix2D((cX, cY), degrees, 1.0)
+    return cv2.warpAffine(image, rot_mat, (w, h))
 
 
-args = parsed_args()
-image = cv2.imread(args["image"])
+image = imageutils.arg_image()
 cv2.imshow("Original", image)
-
-(h, w) = image.shape[:2]
-(cX, cY) = (w / 2, h / 2)
-
-rot_mat = cv2.getRotationMatrix2D((cX, cY), 45, 1.0)
-rotated = cv2.warpAffine(image, rot_mat, (w, h))
-cv2.imshow("Rotated by 35 degrees", rotated)
-
-rot_mat = cv2.getRotationMatrix2D((cX - 50, cY - 50), 45, 1.0)
-rotated = cv2.warpAffine(image, rot_mat, (w, h))
-cv2.imshow("Offset & rotated by 45 degrees", rotated)
-
+cv2.imshow("Rotated by 45 degrees counter-clockwise", rotated(image, 45))
+cv2.imshow("Rotated by 45 degrees c-c minus 50px offset on both axis", rotated(image, 45, x_offset=-50, y_offset=-50))
 cv2.waitKey(0)
