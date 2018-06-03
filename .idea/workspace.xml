@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_kernels/morph_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_kernels/morph_ops.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,11 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_kernels/morph_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="235">
+              <caret line="16" selection-start-line="16" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hat.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_kernels/hat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -103,18 +114,6 @@
                 <caret line="3" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="translation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_imgproc/translation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#1#11#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -168,13 +167,14 @@
         <option value="$PROJECT_DIR$/src/1_imgproc/channels.py" />
         <option value="$PROJECT_DIR$/src/1.5_kernels/kernel.py" />
         <option value="$PROJECT_DIR$/src/1_kernels/morph_ops.py" />
+        <option value="$PROJECT_DIR$/src/1_kernels/hat.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="520" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="565" />
     <option name="y" value="22" />
-    <option name="width" value="920" />
+    <option name="width" value="875" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -235,25 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.morph_ops">
-    <configuration name="arithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/arithm.py" />
-      <option name="PARAMETERS" value="-i ../../assets/grand_canyon.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.hat">
     <configuration name="bitwise_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,6 +268,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/channels.py" />
       <option name="PARAMETERS" value="-i ../../assets/florida_trip_small.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="hat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_kernels" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_kernels/hat.py" />
+      <option name="PARAMETERS" value="-i ../../assets/car.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -327,19 +327,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.arithm" />
       <item itemvalue="Python.bitwise_ops" />
       <item itemvalue="Python.masking" />
       <item itemvalue="Python.channels" />
       <item itemvalue="Python.morph_ops" />
+      <item itemvalue="Python.hat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hat" />
+        <item itemvalue="Python.bitwise_ops" />
         <item itemvalue="Python.morph_ops" />
         <item itemvalue="Python.channels" />
         <item itemvalue="Python.masking" />
-        <item itemvalue="Python.bitwise_ops" />
-        <item itemvalue="Python.arithm" />
       </list>
     </recent_temporary>
   </component>
@@ -357,16 +357,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
+    <frame x="565" y="22" width="875" height="821" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20958512" side_tool="true" visible="true" weight="0.32596686" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21008404" side_tool="true" visible="true" weight="0.32596686" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79041487" visible="true" weight="0.32596686" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.789916" visible="true" weight="0.32596686" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13519314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22689076" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49305555" weight="0.32596686" />
@@ -562,8 +561,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_kernels/morph_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="235">
+          <caret line="16" selection-start-line="16" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_kernels/hat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -19,6 +19,8 @@ def morphological_op_name(op_type):
         return "Opening"
     elif op_type == cv2.MORPH_CLOSE:
         return "Closing"
+    elif op_type == cv2.MORPH_GRADIENT:
+        return "Gradient"
     else:
         return "Other"
 
@@ -50,6 +52,7 @@ def compare_dilated():
         cv2.imshow("Dilated {} times".format(i + 1), eroded)
     wait_and_destroy_all_windows()
 
+
 def compare_opening():
     compare_morphological_op(cv2.MORPH_OPEN, cv2.MORPH_ELLIPSE)
 
@@ -58,7 +61,12 @@ def compare_closing():
     compare_morphological_op(cv2.MORPH_CLOSE, cv2.MORPH_ELLIPSE)
 
 
+def compare_gradient():
+    compare_morphological_op(cv2.MORPH_GRADIENT, cv2.MORPH_ELLIPSE)
+
+
 compare_eroded()
 compare_dilated()
 compare_opening()
 compare_closing()
+compare_gradient()
