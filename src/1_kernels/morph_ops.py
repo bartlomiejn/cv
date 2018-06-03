@@ -1,5 +1,6 @@
 import cv2
 from imageutils import image_arg
+from imageutils import wait_and_destroy_all_windows
 
 image = image_arg()
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -7,11 +8,6 @@ gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 def show_original():
     cv2.imshow("Original", image)
-
-
-def wait_and_destroy_all_windows():
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 
 
 def morphological_op_name(op_type):

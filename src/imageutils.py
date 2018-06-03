@@ -30,6 +30,11 @@ def print_pixel(bgr_pixel):
     print("R: {r}, G: {g}, B: {b}".format(r=r, g=g, b=b))
 
 
+def wait_and_destroy_all_windows():
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+
 def rotated(image, degrees, x_offset=None, y_offset=None):
     (h, w) = image.shape[:2]
     (cX, cY) = (w / 2, h / 2)
