@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0_logo/pyimagesearch_gurus_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0_logo/test_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_images/load_display_save.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_imgbasics/img.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_drawing/drawing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/flip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/imageutils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/rot_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/rotation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/scale.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_imgproc/translation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imageutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageutils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +28,8 @@
       <file leaf-file-name="imageutils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/imageutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="209">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -49,11 +37,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crop.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_imgproc/crop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arithm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_imgproc/arithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bitwise_ops.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,7 +147,10 @@
         <option value="$PROJECT_DIR$/4_imgproc/flip.py" />
         <option value="$PROJECT_DIR$/4_imgproc/imageutils.py" />
         <option value="$PROJECT_DIR$/4_imgproc/crop.py" />
+        <option value="$PROJECT_DIR$/src/1_imgproc/crop.py" />
+        <option value="$PROJECT_DIR$/src/1_imgproc/arithm.py" />
         <option value="$PROJECT_DIR$/src/imageutils.py" />
+        <option value="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" />
       </list>
     </option>
   </component>
@@ -203,7 +218,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scale">
+  <component name="RunManager" selected="Python.bitwise_ops">
+    <configuration name="arithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/arithm.py" />
+      <option name="PARAMETERS" value="-i ../../assets/grand_canyon.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="bitwise_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="crop" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,9 +313,13 @@
       <item itemvalue="Python.scale" />
       <item itemvalue="Python.flip" />
       <item itemvalue="Python.crop" />
+      <item itemvalue="Python.arithm" />
+      <item itemvalue="Python.bitwise_ops" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bitwise_ops" />
+        <item itemvalue="Python.arithm" />
         <item itemvalue="Python.crop" />
         <item itemvalue="Python.flip" />
         <item itemvalue="Python.scale" />
@@ -286,15 +341,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="678" y="22" width="762" height="821" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31527779" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.375" side_tool="true" visible="true" weight="0.32734805" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20555556" side_tool="true" visible="true" weight="0.32734805" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.625" visible="true" weight="0.32734805" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79444444" visible="true" weight="0.32734805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -430,20 +486,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_imgproc/crop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_imgproc/arithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="209">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_imgproc/crop.py">
+    <entry file="file://$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="305">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

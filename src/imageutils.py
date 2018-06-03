@@ -12,7 +12,7 @@ class Axis(IntEnum):
 
 
 def parsed_args():
-    """Parses required -i command-line argument."""
+    """Parses required -i image path command-line argument."""
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the image")
     return vars(ap.parse_args())
