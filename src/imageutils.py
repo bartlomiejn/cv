@@ -5,23 +5,27 @@ from enum import IntEnum
 
 
 class Axis(IntEnum):
+    """Wraps `flipMode` values for `cv2.flip` function."""
     BOTH = -1
     VERTICAL = 0
     HORIZONTAL = 1
 
 
 def parsed_args():
+    """Parses required -i command-line argument."""
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the image")
     return vars(ap.parse_args())
 
 
 def arg_image():
+    """Attempts to retrieve image at `-i` command-line argument."""
     args = parsed_args()
     return cv2.imread(args["image"])
 
 
 def print_pixel(bgr_pixel):
+    """Prints BGR values from provided pixel."""
     (b, g, r) = bgr_pixel
     print("R: {r}, G: {g}, B: {b}".format(r=r, g=g, b=b))
 
