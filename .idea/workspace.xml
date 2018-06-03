@@ -203,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crop">
+  <component name="RunManager" selected="Python.scale">
     <configuration name="crop" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,11 +212,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_imgproc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/crop.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/crop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,30 +230,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_imgproc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/flip.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/flip.py" />
       <option name="PARAMETERS" value="-i ../assets/florida_trip.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="rot_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_imgproc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/rot_test.py" />
-      <option name="PARAMETERS" value="-i ../assets/wynn.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -266,18 +248,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_imgproc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_imgproc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_imgproc/scale.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_imgproc/scale.py" />
       <option name="PARAMETERS" value="-i ../assets/florida_trip_small.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.rot_test" />
       <item itemvalue="Python.scale" />
       <item itemvalue="Python.flip" />
       <item itemvalue="Python.crop" />
@@ -287,7 +268,6 @@
         <item itemvalue="Python.crop" />
         <item itemvalue="Python.flip" />
         <item itemvalue="Python.scale" />
-        <item itemvalue="Python.rot_test" />
       </list>
     </recent_temporary>
   </component>
