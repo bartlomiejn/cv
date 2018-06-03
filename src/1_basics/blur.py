@@ -46,11 +46,9 @@ def compare_bilateral_blur():
     params = [(11, 21, 7), (11, 41, 21), (11, 61, 39)]
     for (diameter, sigma_color, sigma_space) in params:
         blurred_img = cv2.bilateralFilter(
-            img, diameter, sigma_color, sigma_space
-        )
+            img, diameter, sigma_color, sigma_space)
         title = "Bilateral d={} sc={} ss={}".format(
-            diameter, sigma_color, sigma_space
-        )
+            diameter, sigma_color, sigma_space)
         cv2.imshow(title, blurred_img)
     wait_and_destroy_all_windows()
 
