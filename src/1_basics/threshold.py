@@ -8,7 +8,7 @@ def show_simple_thresholding(image, blurred_image):
     (T, thresh_inv) = cv2.threshold(
         blurred_image, thresh=200, maxval=255, type=cv2.THRESH_BINARY_INV)
     (T, thresh) = cv2.threshold(
-        blurred_image, thresh=200, maxval=255, type=cv2.THRESH_BINARY_INV)
+        blurred_image, thresh=200, maxval=255, type=cv2.THRESH_BINARY)
     cv2.imshow("Original", image)
     cv2.imshow("Thresholded Inverse", thresh_inv)
     cv2.imshow("Thresholded", thresh)
