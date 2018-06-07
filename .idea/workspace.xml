@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_drawing/drawing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/drawing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/arithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/arithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/bitwise_ops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/channels.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/channels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/crop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/crop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/flip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/masking.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/masking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/rotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/rotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/scale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_imgproc/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/translation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_kernels/blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/blur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_kernels/hat.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/hat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_kernels/morph_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/morph_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_basics/masking.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/mask.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_spaces.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="color_spaces.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_basics/color_spaces.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="180">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -78,8 +65,23 @@
       <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threshold.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_basics/threshold.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,14 +126,17 @@
         <option value="$PROJECT_DIR$/src/1_kernels/morph_ops.py" />
         <option value="$PROJECT_DIR$/src/1_kernels/blur.py" />
         <option value="$PROJECT_DIR$/src/1_colorspaces/color.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/color_spaces.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1911" />
+    <option name="y" value="-236" />
     <option name="width" value="1280" />
-    <option name="height" value="821" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -192,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.color">
+  <component name="RunManager" selected="Python.threshold">
     <configuration name="bitwise_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,7 +270,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="morph_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="threshold" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,30 +278,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_kernels" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_kernels/morph_ops.py" />
-      <option name="PARAMETERS" value="-i ../../assets/logo_blobs.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/threshold.py" />
+      <option name="PARAMETERS" value="-i ../../assets/thresh/license_plate.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
       <item itemvalue="Python.bitwise_ops" />
-      <item itemvalue="Python.morph_ops" />
       <item itemvalue="Python.hat" />
       <item itemvalue="Python.blur" />
       <item itemvalue="Python.color" />
+      <item itemvalue="Python.threshold" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.threshold" />
         <item itemvalue="Python.color" />
         <item itemvalue="Python.blur" />
         <item itemvalue="Python.hat" />
         <item itemvalue="Python.bitwise_ops" />
-        <item itemvalue="Python.morph_ops" />
       </list>
     </recent_temporary>
   </component>
@@ -314,25 +319,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="22" width="1280" height="821" extended-state="0" />
+    <frame x="-1911" y="-236" width="1911" height="1178" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2092084" side_tool="true" visible="true" weight="0.32596686" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21027288" side_tool="true" visible="true" weight="0.32562444" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7907916" visible="true" weight="0.32596686" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78972715" visible="true" weight="0.32562444" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15266559" />
-      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10272873" />
+      <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49305555" weight="0.32596686" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49224183" weight="0.32562444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="201" height="582" id="Documentation" order="4" side_tool="true" weight="0.32868022" />
+      <window_info anchor="right" x="0" y="0" width="427" height="978" id="Documentation" order="5" side_tool="true" weight="0.3285179" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -342,33 +348,68 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/scale.py">
+    <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="465">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py">
+    <entry file="file://$PROJECT_DIR$/src/1_basics/hat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/color_spaces.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/scale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/rotation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#1#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -376,9 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#1#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -403,29 +438,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/4_imgproc/rot_test.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/rotation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#1#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,9 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#1#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -443,9 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -456,7 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/masking.py">
+    <entry file="file://$PROJECT_DIR$/src/1_basics/mask.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
@@ -470,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,9 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,22 +515,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/0_intro/load_display_save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/0_intro/img.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -544,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -563,10 +552,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/color_spaces.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/threshold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
