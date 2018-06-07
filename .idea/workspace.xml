@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/1_basics/gradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/gradient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_basics/morph_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/morph_ops.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="202">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradient.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gradient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_basics/gradient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -138,9 +138,9 @@
         <option value="$PROJECT_DIR$/src/1_kernels/blur.py" />
         <option value="$PROJECT_DIR$/src/1_colorspaces/color.py" />
         <option value="$PROJECT_DIR$/src/1_basics/color_spaces.py" />
-        <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
         <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
         <option value="$PROJECT_DIR$/src/1_basics/gradient.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
       </list>
     </option>
   </component>
@@ -209,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gradient">
+  <component name="RunManager" selected="Python.morph_ops">
     <configuration name="blur" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -264,7 +264,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="hat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="morph_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,12 +272,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_kernels" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_kernels/hat.py" />
-      <option name="PARAMETERS" value="-i ../../assets/car.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
+      <option name="PARAMETERS" value="-i ../../assets/thresh/license_plate.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -301,19 +301,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.hat" />
       <item itemvalue="Python.blur" />
       <item itemvalue="Python.color" />
       <item itemvalue="Python.threshold" />
       <item itemvalue="Python.gradient" />
+      <item itemvalue="Python.morph_ops" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.morph_ops" />
         <item itemvalue="Python.gradient" />
         <item itemvalue="Python.threshold" />
         <item itemvalue="Python.color" />
         <item itemvalue="Python.blur" />
-        <item itemvalue="Python.hat" />
       </list>
     </recent_temporary>
   </component>
@@ -361,12 +361,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/1_basics/gradient.py</url>
-          <line>34</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
@@ -650,20 +644,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
+    <entry file="file://$PROJECT_DIR$/src/1_basics/gradient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="51" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/gradient.py">
+    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="202">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
