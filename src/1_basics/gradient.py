@@ -4,11 +4,6 @@ from imageutils import wait_and_destroy_all_windows
 from enum import IntEnum
 
 
-class Operator(IntEnum):
-    SOBEL = -1
-    SCHARR = 0
-
-
 def show(function, image, image_gray):
     desc = None
     if function == cv2.Sobel:
