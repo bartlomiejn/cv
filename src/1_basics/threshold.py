@@ -16,6 +16,7 @@ def show_simple_thresholding(image, blurred_image):
     wait_and_destroy_all_windows()
 
 
+# - Otsu's thresholding is global
 # - Otsu’s method assumes that our image contains two classes of pixels: the
 # background and the foreground. Furthermore, Otsu’s method makes the
 # assumption that the grayscale histogram of our pixel intensities of our
@@ -34,6 +35,7 @@ def show_otsu_thresholding(image, blurred_image):
     wait_and_destroy_all_windows()
 
 
+# - Adaptive thresholding is local
 # - For simple images with controlled lighting conditions, this usually isn’t a
 # problem. But for situations when the lighting is non-uniform across the image,
 # having only a single value of T can seriously hurt our thresholding
@@ -54,6 +56,7 @@ def show_adaptive_thresholding(image, blurred_image):
         blockSize=25, C=15)
     sk_t = threshold_local(
         blurred_image, block_size=29, offset=5, method="gaussian")
+    # bitwise_not equivalent
     sk_thresh = (blurred_image < sk_t).astype("uint8") * 255
     cv2.imshow("OpenCV Mean Adaptive Thresholding", cv_thresh)
     cv2.imshow("Scikit Mean Adaptive Thresholding", sk_thresh)
