@@ -9,18 +9,14 @@ class Operator(IntEnum):
     SCHARR = 0
 
 
-def show(operator, image, image_gray):
-    g_x = None
-    g_y = None
+def show(function, image, image_gray):
     desc = None
-    if operator == Operator.SOBEL:
-        g_x = cv2.Sobel(image_gray, ddepth=cv2.CV_64F, dx=1, dy=0)
-        g_y = cv2.Sobel(image_gray, ddepth=cv2.CV_64F, dx=0, dy=1)
+    if function == cv2.Sobel:
         desc = "Sobel"
-    else:
-        g_x = cv2.Scharr(image_gray, ddepth=cv2.CV_64F, dx=1, dy=0)
-        g_y = cv2.Scharr(image_gray, ddepth=cv2.CV_64F, dx=0, dy=1)
+    elif function == cv2.Scharr:
         desc = "Scharr"
+    g_x = function(image_gray, ddepth=cv2.CV_64F, dx=1, dy=0)
+    g_y = function(image_gray, ddepth=cv2.CV_64F, dx=0, dy=1)
     g_x = cv2.convertScaleAbs(g_x)
     g_y = cv2.convertScaleAbs(g_y)
     image_sobel = cv2.addWeighted(g_x, 0.5, g_y, 0.5, 0)
@@ -33,5 +29,5 @@ def show(operator, image, image_gray):
 
 image = image_arg()
 image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-show(Operator.SOBEL, image, image_gray)
-show(Operator.SCHARR, image, image_gray)
+show(cv2.Sobel, image, image_gray)
+show(cv2.Scharr, image, image_gray)
