@@ -29,6 +29,9 @@ def sobel_gradient(image):
 
 
 def gradient_mag_orientation(g_x, g_y):
+    # (0, 0) in the upper left corner
+    # gradient_x = I(x+1, y) - I(x-1, y)
+    # gradient_y = I(x, y+1) - I(x, y-1)
     magnitude = np.sqrt((g_x ** 2) + (g_y ** 2))
     orientation = np.arctan2(g_y, g_x) * (180 / np.pi) % 180
     return magnitude, orientation
