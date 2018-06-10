@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_basics/gradient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_basics/sobel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="blur.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="56">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -95,13 +94,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grad_orientation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grad_orientation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_basics/grad_orientation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="224">
+              <caret line="29" selection-start-line="29" selection-end-line="36" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canny.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_basics/canny.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,13 +163,15 @@
         <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
         <option value="$PROJECT_DIR$/src/imageutils.py" />
         <option value="$PROJECT_DIR$/src/1_basics/grad_orientation.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/edge_detect.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/canny.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="835" />
-    <option name="height" value="820" />
+    <option name="width" value="907" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -195,7 +208,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="RSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -219,8 +232,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.grad_orientation">
-    <configuration name="color" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.edge_detect">
+    <configuration name="edge_detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,12 +241,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_colorspaces" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_colorspaces/color_spaces.py" />
-      <option name="PARAMETERS" value="-i ../../assets/florida_trip.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/canny.py" />
+      <option name="PARAMETERS" value="-i ../../assets/thresh/coins02.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -311,19 +324,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.color" />
       <item itemvalue="Python.threshold" />
       <item itemvalue="Python.gradient" />
       <item itemvalue="Python.morph_ops" />
       <item itemvalue="Python.grad_orientation" />
+      <item itemvalue="Python.edge_detect" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.edge_detect" />
         <item itemvalue="Python.grad_orientation" />
         <item itemvalue="Python.gradient" />
         <item itemvalue="Python.morph_ops" />
         <item itemvalue="Python.threshold" />
-        <item itemvalue="Python.color" />
       </list>
     </recent_temporary>
   </component>
@@ -341,15 +354,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="835" height="820" extended-state="0" />
+    <frame x="0" y="22" width="907" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24842371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22774567" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.18284994" side_tool="true" visible="true" weight="0.22821577" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.81715006" visible="true" weight="0.22821577" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.16763006" side_tool="true" visible="true" weight="0.39389735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8323699" visible="true" weight="0.39389735" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -681,16 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/color_spaces.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -738,12 +741,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/grad_orientation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="224">
+          <caret line="29" selection-start-line="29" selection-end-line="36" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/canny.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
