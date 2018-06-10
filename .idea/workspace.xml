@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/thresh/bricks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/thresh/clonazepam_1mg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/thresh/coins01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/thresh/coins02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/thresh/license_plate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/thresh/opencv_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imageutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_basics/contours.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_11_contours/basics.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +18,8 @@
       <file leaf-file-name="imageutils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/imageutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state>
+              <caret selection-end-line="1" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -31,11 +27,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contours.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/contours.py">
+      <file leaf-file-name="basics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_11_contours/basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="89">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contourutils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contourutils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="properties.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_11_contours/properties.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -91,6 +111,10 @@
         <option value="$PROJECT_DIR$/src/1_basics/canny.py" />
         <option value="$PROJECT_DIR$/src/imageutils.py" />
         <option value="$PROJECT_DIR$/src/1_basics/contours.py" />
+        <option value="$PROJECT_DIR$/src/1_11_contours/cnt_properties.py" />
+        <option value="$PROJECT_DIR$/src/contourutils.py" />
+        <option value="$PROJECT_DIR$/src/1_11_contours/basics.py" />
+        <option value="$PROJECT_DIR$/src/1_11_contours/properties.py" />
       </list>
     </option>
   </component>
@@ -123,7 +147,7 @@
               <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="1_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="1_11_contours" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,13 +161,14 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4_imgproc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/1_11_contours" />
       <recent name="$PROJECT_DIR$/src/1_basics" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/0_logo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/4_imgproc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -171,7 +196,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/contours.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_11_contours/basics.py" />
       <option name="PARAMETERS" value="-i ../../assets/basic_shapes.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -687,20 +712,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state>
+          <caret selection-end-line="1" selection-end-column="10" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours.py">
+    <entry file="file://$PROJECT_DIR$/src/contourutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_11_contours/basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_11_contours/properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
