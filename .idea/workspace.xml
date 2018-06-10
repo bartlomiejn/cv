@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_basics/contours.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_11_contours/basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_11_contours/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_11_contours/properties.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
       <file leaf-file-name="imageutils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/imageutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-7">
               <caret selection-end-line="1" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="basics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_11_contours/basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="-7">
               <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -42,7 +41,7 @@
       <file leaf-file-name="contourutils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/contourutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-7">
               <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="properties.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/1_11_contours/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -120,8 +119,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="907" />
-    <option name="height" value="818" />
+    <option name="width" value="839" />
+    <option name="height" value="819" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -158,7 +157,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -183,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.contours">
+  <component name="RunManager" selected="Python.properties">
     <configuration name="contours" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,7 +255,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="morph_ops" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="properties" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,30 +263,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_11_contours" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
-      <option name="PARAMETERS" value="-i ../../assets/thresh/license_plate.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_11_contours/properties.py" />
+      <option name="PARAMETERS" value="-i ../../assets/more_shapes.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
       <item itemvalue="Python.gradient" />
-      <item itemvalue="Python.morph_ops" />
       <item itemvalue="Python.grad_orientation" />
       <item itemvalue="Python.edge_detect" />
       <item itemvalue="Python.contours" />
+      <item itemvalue="Python.properties" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.properties" />
         <item itemvalue="Python.contours" />
         <item itemvalue="Python.edge_detect" />
         <item itemvalue="Python.grad_orientation" />
         <item itemvalue="Python.gradient" />
-        <item itemvalue="Python.morph_ops" />
       </list>
     </recent_temporary>
   </component>
@@ -305,19 +304,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="907" height="818" extended-state="0" />
+    <frame x="0" y="22" width="839" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22774567" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.16763006" side_tool="true" visible="true" weight="0.39389735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8323699" visible="true" weight="0.39389735" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.18318695" side_tool="true" visible="true" weight="0.3933518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.81681305" visible="true" weight="0.3933518" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22774567" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32409972" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -327,7 +327,6 @@
       <window_info anchor="right" x="0" y="0" width="427" height="978" id="Documentation" order="5" side_tool="true" weight="0.3285179" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49224183" weight="0.32562444" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -717,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/imageutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-7">
           <caret selection-end-line="1" selection-end-column="10" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -727,7 +726,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contourutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-7">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -737,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_11_contours/basics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="-7">
           <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -747,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_11_contours/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="153">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
