@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/bricks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/clonazepam_1mg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/coins01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/coins02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/license_plate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/thresh/opencv_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imageutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageutils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +22,8 @@
       <file leaf-file-name="imageutils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/imageutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="324">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -25,92 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/hat.py">
+      <file leaf-file-name="contours.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_basics/contours.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blur.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color_spaces.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/color_spaces.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="morph_ops.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threshold.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/threshold.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sobel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/sobel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grad_orientation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/grad_orientation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="29" selection-start-line="29" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canny.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/1_basics/canny.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="294">
+              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -161,10 +86,11 @@
         <option value="$PROJECT_DIR$/src/1_basics/gradient.py" />
         <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
         <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
-        <option value="$PROJECT_DIR$/src/imageutils.py" />
         <option value="$PROJECT_DIR$/src/1_basics/grad_orientation.py" />
         <option value="$PROJECT_DIR$/src/1_basics/edge_detect.py" />
         <option value="$PROJECT_DIR$/src/1_basics/canny.py" />
+        <option value="$PROJECT_DIR$/src/imageutils.py" />
+        <option value="$PROJECT_DIR$/src/1_basics/contours.py" />
       </list>
     </option>
   </component>
@@ -232,7 +158,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.edge_detect">
+  <component name="RunManager" selected="Python.contours">
+    <configuration name="contours" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/contours.py" />
+      <option name="PARAMETERS" value="-i ../../assets/basic_shapes.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="edge_detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,38 +249,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="threshold" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/threshold.py" />
-      <option name="PARAMETERS" value="-i ../../assets/thresh/license_plate.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="Python.threshold" />
       <item itemvalue="Python.gradient" />
       <item itemvalue="Python.morph_ops" />
       <item itemvalue="Python.grad_orientation" />
       <item itemvalue="Python.edge_detect" />
+      <item itemvalue="Python.contours" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.contours" />
         <item itemvalue="Python.edge_detect" />
         <item itemvalue="Python.grad_orientation" />
         <item itemvalue="Python.gradient" />
         <item itemvalue="Python.morph_ops" />
-        <item itemvalue="Python.threshold" />
       </list>
     </recent_temporary>
   </component>
@@ -704,32 +630,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/threshold.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imageutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,8 +669,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/canny.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_basics/contours.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

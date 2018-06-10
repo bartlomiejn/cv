@@ -24,6 +24,17 @@ def image_arg():
     return cv2.imread(args["image"])
 
 
+def image_with_gray_arg():
+    """
+    Attempts to retrieve image at `-i` command-line argument. Returns both
+    the image and its grayscale version.
+    :rtype: numpy.array, numpy.array
+    """
+    args = parsed_args()
+    image = cv2.imread(args["image"])
+    return image, cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+
 def print_pixel(bgr_pixel):
     """Prints BGR values from provided pixel."""
     (b, g, r) = bgr_pixel
