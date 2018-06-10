@@ -46,6 +46,16 @@ def wait_and_destroy_all_windows():
     cv2.destroyAllWindows()
 
 
+def check_opencv_version(major, lib=None):
+    if lib is None:
+        import cv2 as lib
+    return lib.__version__.startswith(major)
+
+
+def is_cv2():
+    return check_opencv_version("2.")
+
+
 def rotated(image, degrees, x_offset=None, y_offset=None):
     (h, w) = image.shape[:2]
     (cX, cY) = (w / 2, h / 2)

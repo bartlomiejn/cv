@@ -1,17 +1,8 @@
 import cv2
 from imageutils import wait_and_destroy_all_windows
 from imageutils import image_with_gray_arg
+from imageutils import is_cv2
 import numpy as np
-
-
-def check_opencv_version(major, lib=None):
-    if lib is None:
-        import cv2 as lib
-    return lib.__version__.startswith(major)
-
-
-def is_cv2():
-    return check_opencv_version("2.")
 
 
 def contours_from_tuple(contours):
