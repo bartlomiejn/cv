@@ -1,14 +1,9 @@
 import cv2
 import numpy as np
-from enum import Enum
 from imageutils import image_with_gray_arg
 from imageutils import is_cv2
+from imageutils import Color
 from contourutils import get_contours
-
-
-class Color(Enum):
-    WHITE = 255, 255, 255
-    GREEN = 0, 255, 0
 
 
 def area_and_perimeter(contour):

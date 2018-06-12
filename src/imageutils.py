@@ -1,7 +1,13 @@
 import argparse
 import cv2
 import numpy as np
+from enum import Enum
 from enum import IntEnum
+
+
+class Color(Enum):
+    WHITE = 255, 255, 255
+    GREEN = 0, 255, 0
 
 
 class Axis(IntEnum):
