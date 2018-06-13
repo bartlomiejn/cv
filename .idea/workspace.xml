@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_11_contours/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_11_contours/properties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imageutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_11_contours/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_11_contours/solidity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,18 +38,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contourutils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/contourutils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="properties.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_11_contours/properties.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,11 +47,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tictactoe.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/1_11_contours/tictactoe.py">
+      <file leaf-file-name="solidity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_11_contours/solidity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="-165">
+              <caret selection-end-line="3" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tetris.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/1_11_contours/tetris.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -125,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/imageutils.py" />
         <option value="$PROJECT_DIR$/src/1_11_contours/properties.py" />
         <option value="$PROJECT_DIR$/src/1_11_contours/extended_props.py" />
+        <option value="$PROJECT_DIR$/src/1_11_contours/tetris.py" />
       </list>
     </option>
   </component>
@@ -193,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.extended_props">
+  <component name="RunManager" selected="Python.tetris">
     <configuration name="contours" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,26 +242,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_11_contours/tictactoe.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_11_contours/solidity.py" />
       <option name="PARAMETERS" value="-i ../../assets/contours_tictactoe.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="grad_orientation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_basics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_basics/grad_orientation.py" />
-      <option name="PARAMETERS" value="-i ../../assets/thresh/clonazepam_1mg.png" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -284,20 +266,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="tetris" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_11_contours" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_11_contours/tetris.py" />
+      <option name="PARAMETERS" value="-i ../../assets/contours_tetris_blocks.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.grad_orientation" />
       <item itemvalue="Python.edge_detect" />
       <item itemvalue="Python.contours" />
       <item itemvalue="Python.properties" />
       <item itemvalue="Python.extended_props" />
+      <item itemvalue="Python.tetris" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tetris" />
         <item itemvalue="Python.extended_props" />
         <item itemvalue="Python.properties" />
         <item itemvalue="Python.contours" />
         <item itemvalue="Python.edge_detect" />
-        <item itemvalue="Python.grad_orientation" />
       </list>
     </recent_temporary>
   </component>
@@ -316,16 +316,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="873" height="818" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22262335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22262335" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" visible="true" weight="0.39389735" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" visible="true" weight="0.18030514" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.39389735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60770154" weight="0.18030514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -349,13 +348,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/hat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/blur.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -652,16 +644,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contourutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_11_contours/basics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -689,10 +671,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_11_contours/tictactoe.py">
+    <entry file="file://$PROJECT_DIR$/src/1_11_contours/solidity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="-165">
+          <caret selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contourutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_11_contours/tetris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
