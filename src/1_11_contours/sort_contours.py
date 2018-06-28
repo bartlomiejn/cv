@@ -20,7 +20,7 @@ def sort_contours(contours, method='left-to-right'):
         i = 1
     bboxes = [cv2.boundingRect(contour) for contour in contours]
     contours, bboxes = zip(*sorted(
-        zip(contours, bboxes), key=lambda b:b[1][i], reverse=reverse))
+        zip(contours, bboxes), key=lambda b: b[1][i], reverse=reverse))
     return contours, bboxes
 
 
