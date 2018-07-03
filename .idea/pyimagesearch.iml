@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/1_basics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/1_11_contours" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/1_12_histograms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/1_13_blob_extraction" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (cvenv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
