@@ -7,9 +7,9 @@ from imageutils import image_with_gray_arg
 
 def plot_histogram(histogram, name, y_label):
     plt.figure()
-    plt.title("Grayscale Unnormalized Histogram")
+    plt.title(name)
     plt.xlabel("Bins")
-    plt.ylabel("# of pixels")
+    plt.ylabel(y_label)
     plt.plot(hist)
     plt.xlim([0, 256])
 

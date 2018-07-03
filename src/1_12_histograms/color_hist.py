@@ -51,6 +51,14 @@ def show_2d_br_histogram(figure, image, channels):
     print(f"BR 2D Histogram shape: {hist.shape}, {hist.flatten().shape[0]}")
 
 
+def compute_3d_histogram(image, channels):
+    hist = cv2.calcHist(
+        channels, [0, 1, 2], None, [8, 16, 9], [0, 256, 0, 256, 0, 256])
+    print(
+        f"3d histogram shape: {hist.shape}, "
+        f"with {hist.flatten().shape[0]} values")
+
+
 image, gray_image = image_with_gray_arg()
 channels = cv2.split(image)
 cv2.imshow("Original", image)
@@ -59,4 +67,5 @@ fig = plt.figure()
 show_2d_gb_histogram(fig, image, channels)
 show_2d_gr_histogram(fig, image, channels)
 show_2d_br_histogram(fig, image, channels)
+compute_3d_histogram(image, channels)
 plt.show()
