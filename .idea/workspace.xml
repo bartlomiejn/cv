@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,13 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connected_comp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connected_comp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="286">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templ_matching.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,14 +182,16 @@
         <option value="$PROJECT_DIR$/src/1_12_histograms/color_hist.py" />
         <option value="$PROJECT_DIR$/src/1_12_histograms/equalize_hist.py" />
         <option value="$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py" />
+        <option value="$PROJECT_DIR$/src/2_1_2_object_det/template_matching.py" />
+        <option value="$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="557" />
+    <option name="x" value="554" />
     <option name="y" value="22" />
     <option name="width" value="883" />
-    <option name="height" value="820" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -211,6 +226,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="1_13_blob_extraction" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="2_1_2_object_detection" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -222,14 +243,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4_imgproc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/1_11_contours" />
       <recent name="$PROJECT_DIR$/src/1_basics" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/0_logo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/4_imgproc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.connected_comp">
+  <component name="RunManager" selected="Python.templ_matching">
     <configuration name="color_hist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,25 +320,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.venvs/cvenv/bin/python3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_12_histograms" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_12_histograms/histogram.py" />
-      <option name="PARAMETERS" value="-i ../../assets/horseshoe_bend.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="mask_hist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="templ_matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,30 +328,48 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_12_histograms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_1_2_object_detection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_12_histograms/mask_hist.py" />
-      <option name="PARAMETERS" value="-i ../../assets/grand_canyon.png" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py" />
+      <option name="PARAMETERS" value="-s ../../assets/wally_source.png -t ../../assets/wally_template.png" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="template_matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_1_2_object_det" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_1_2_object_det/template_matching.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.histogram" />
       <item itemvalue="Python.color_hist" />
       <item itemvalue="Python.equalize_hist" />
-      <item itemvalue="Python.mask_hist" />
       <item itemvalue="Python.connected_comp" />
+      <item itemvalue="Python.template_matching" />
+      <item itemvalue="Python.templ_matching" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.templ_matching" />
+        <item itemvalue="Python.template_matching" />
         <item itemvalue="Python.connected_comp" />
         <item itemvalue="Python.equalize_hist" />
         <item itemvalue="Python.color_hist" />
-        <item itemvalue="Python.histogram" />
-        <item itemvalue="Python.mask_hist" />
       </list>
     </recent_temporary>
   </component>
@@ -366,12 +387,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="557" y="22" width="883" height="820" extended-state="0" />
+    <frame x="554" y="22" width="883" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" weight="0.17867036" />
-      <window_info anchor="right" x="0" y="0" width="175" height="974" id="Documentation" order="5" side_tool="true" weight="0.32193494" />
+      <window_info anchor="right" x="0" y="0" width="175" height="974" id="Documentation" order="5" side_tool="true" weight="0.32104638" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.35408023" />
@@ -400,13 +421,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/morph_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/threshold.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -746,10 +760,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="286">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
