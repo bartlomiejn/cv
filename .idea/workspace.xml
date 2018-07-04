@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,8 +76,8 @@
       <file leaf-file-name="connected_comp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="354">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -173,10 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1265" />
-    <option name="y" value="-236" />
-    <option name="width" value="1265" />
-    <option name="height" value="1174" />
+    <option name="x" value="557" />
+    <option name="y" value="22" />
+    <option name="width" value="883" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -366,26 +366,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-903" y="-236" width="903" height="1174" extended-state="0" />
+    <frame x="557" y="22" width="883" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23228803" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" weight="0.17867036" />
+      <window_info anchor="right" x="0" y="0" width="175" height="974" id="Documentation" order="5" side_tool="true" weight="0.32193494" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.2376973" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.35408023" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23781213" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="427" height="978" id="Documentation" order="5" side_tool="true" weight="0.3285179" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32409972" />
@@ -746,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_13_blob_extraction/connected_comp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="354">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
