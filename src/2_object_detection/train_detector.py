@@ -42,14 +42,20 @@ def get_caltech_images_and_bboxes(class_images_path, annotations_path):
     images = []
     boxes = []
     for image_path in paths.list_images(class_images_path):
-        subpath_start = find_second_last_occurence(image_path, "/")
-        class_name, image_filename = get_class_subpath_elements(
-            image_path, subpath_start
-        )
-        image_number = image_filename.split("_")[1]
-        image_number = image_number.replace(".jpg", "")
-        mat_id = f"{annotations_path}/{class_name}/annotation_{image_number}.mat"
-        annotations = loadmat(mat_id)["box_coord"]
+        # subpath_start = find_second_last_occurence(image_path, "/")
+        # class_name, image_filename = get_class_subpath_elements(
+        #     image_path, subpath_start
+        # )
+        # image_number = image_filename.split("_")[1]
+        # image_number = image_number.replace(".jpg", "")
+        # mat_id = f"{annotations_path}/{class_name}/annotation_{image_number}.mat"
+        # annotations = loadmat(mat_id)["box_coord"]
+
+        image_id = image_path[image_path.rfind("/") + 1:].split("_")[1]
+        image_id = image_id.replace(".jpg", "")
+        p = "{}/annotation_{}.mat".format(annotations_path, image_id)
+        annotations = loadmat(p)["box_coord"]
+
         bb = [dlib.rectangle(
             left=long(x), top=long(y), right=long(w), bottom=long(h)
         ) for (y, h, x, w) in annotations]
@@ -63,5 +69,14 @@ args = parsed_args()
 print("Gathering images and bboxes")
 class_images_path = args["class"]
 annotations_path = args["annotations"]
-images, boxes = get_caltech_images_and_bboxes(class_images_path, annotations_path)
+output_path = args["output"]
+images, bboxes = get_caltech_images_and_bboxes(class_images_path, annotations_path)
 options = dlib.simple_object_detector_training_options()
+print("Training detector")
+opts = dlib.fhog_object_detector()
+detector = dlib.train_simple_object_detector(images, bboxes, options)
+print(f"Dumping classifier to {output_path}")
+detector.save(output_path)
+win = dlib.image_window()
+win.set_image(detector)
+dlib.hit_enter_to_continue()
