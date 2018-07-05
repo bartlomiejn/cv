@@ -16,7 +16,6 @@ templ = cv2.imread(args["template"])
 templ_h, templ_w = templ.shape[:2]
 result = cv2.matchTemplate(source, templ, cv2.TM_CCOEFF)
 min_val, max_val, min_loc, (x, y) = cv2.minMaxLoc(result)
-print(f"{x} {y}")
 cv2.rectangle(
     source, (x, y), (x + templ_w, y + templ_h), (0, 255, 0), thickness=2)
 cv2.imshow("Source", source)
