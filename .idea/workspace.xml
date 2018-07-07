@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py" afterDir="false" />
-    </list>
+    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +14,8 @@
       <file leaf-file-name="cluster_histograms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+            <state relative-caret-position="324">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -129,7 +125,7 @@
     <option name="x" value="88" />
     <option name="y" value="22" />
     <option name="width" value="1350" />
-    <option name="height" value="820" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -327,7 +323,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="22" width="1350" height="820" extended-state="0" />
+    <frame x="88" y="22" width="1350" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -342,7 +338,7 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32365146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3900415" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39112344" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,32 +376,32 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>np.where([True, True, False, True, False, True])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.where([True, True, False, False, True])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.where([True, True, False, True])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.where([True, False, True])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.where([False, True])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.where(False, True)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -420,7 +416,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>image_path[find_second_last_occurence(image_path, &quot;/&quot;)+1:].split(&quot;/&quot;)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -781,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+        <state relative-caret-position="324">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
