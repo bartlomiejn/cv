@@ -73,9 +73,9 @@ output_path = args["output"]
 images, bboxes = get_caltech_images_and_bboxes(class_images_path, annotations_path)
 options = dlib.simple_object_detector_training_options()
 print("Training detector")
-opts = dlib.fhog_object_detector()
+# TODO: Fix train_simple_object_detector which crashes for some reason
 detector = dlib.train_simple_object_detector(images, bboxes, options)
-print(f"Dumping classifier to {output_path}")
+print("Saving classifier to {}".format(output_path))
 detector.save(output_path)
 win = dlib.image_window()
 win.set_image(detector)
