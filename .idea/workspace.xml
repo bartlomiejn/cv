@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/euclidean_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/euclidean_dist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2_object_detection/train_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/2_object_detection/train_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogram.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,9 +32,16 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="labhistogram.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogram.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="labhistogramgenerator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
@@ -71,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4_imgproc/scale.py" />
-        <option value="$PROJECT_DIR$/4_imgproc/imgparser.py" />
         <option value="$PROJECT_DIR$/4_imgproc/img_arg_parser.py" />
         <option value="$PROJECT_DIR$/4_imgproc/rot_test.py" />
         <option value="$PROJECT_DIR$/4_imgproc/rotation.py" />
@@ -122,13 +126,15 @@
         <option value="$PROJECT_DIR$/src/2_object_detection/train_detector.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/k_means_clustering.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/__init__.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogram.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="587" />
+    <option name="x" value="378" />
     <option name="y" value="22" />
-    <option name="width" value="851" />
+    <option name="width" value="1060" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -345,15 +351,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="587" y="22" width="851" height="820" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" weight="0.17794254" />
+      <window_info anchor="right" x="0" y="0" width="162" height="620" id="Documentation" order="5" side_tool="true" weight="0.19159456" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60770154" weight="0.13692947" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35105067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28800988" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32409972" />
@@ -364,7 +370,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="205" height="918" id="Documentation" order="5" side_tool="true" visible="true" weight="0.19252187" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -787,8 +792,15 @@
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogram.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
