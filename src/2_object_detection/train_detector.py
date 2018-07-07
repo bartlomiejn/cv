@@ -73,7 +73,7 @@ output_path = args["output"]
 images, bboxes = get_caltech_images_and_bboxes(class_images_path, annotations_path)
 options = dlib.simple_object_detector_training_options()
 print("Training detector")
-# TODO: Fix train_simple_object_detector which crashes on
+# TODO: Fix dlib.train_simple_object_detector which crashes on
 # TODO: `RuntimeError: Error serializing object of type int`
 detector = dlib.train_simple_object_detector(images, bboxes, options)
 print("Saving classifier to {}".format(output_path))
