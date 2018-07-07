@@ -2,7 +2,7 @@ import cv2
 import imutils
 
 
-class LabHistogramGenerator:
+class LabHistogram:
     def __init__(self, bins):
         self.bins = bins
 
