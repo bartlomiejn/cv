@@ -12,8 +12,8 @@ class LabHistogram:
             [lab], [0, 1, 2], mask, self.bins, [0, 256, 0, 256, 0, 256]
         )
         if imutils.is_cv2():
-            hist = cv2.normalize(hist).flatten()
+            normalized_hist = cv2.normalize(hist).flatten()
         else:
             # is_cv3()
-            hist = cv2.normalize(hist, hist).flatten()
-        return hist
+            normalized_hist = cv2.normalize(hist, hist).flatten()
+        return normalized_hist
