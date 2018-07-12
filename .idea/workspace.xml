@@ -11,13 +11,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cluster_histograms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cluster_histograms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="186">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hu_moments.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contourutils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contourutils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4_imgproc/rotation.py" />
         <option value="$PROJECT_DIR$/4_imgproc/translation.py" />
         <option value="$PROJECT_DIR$/4_imgproc/flip.py" />
         <option value="$PROJECT_DIR$/4_imgproc/imageutils.py" />
@@ -118,13 +141,14 @@
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
+    <option name="x" value="562" />
     <option name="y" value="22" />
-    <option name="width" value="1350" />
+    <option name="width" value="876" />
     <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -158,13 +182,6 @@
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="10_image_descriptors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="10_image_descriptors" type="462c0819:PsiDirectoryNode" />
-              <item name="k_means_clustering" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cluster_histograms">
+  <component name="RunManager" selected="Python.hu_moments">
     <configuration name="cluster_histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,6 +255,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="hu_moments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="templ_matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,24 +287,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py" />
       <option name="PARAMETERS" value="-s ../../assets/wally_source.png -t ../../assets/wally_template.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="template_matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_1_2_object_det" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_1_2_object_det/template_matching.py" />
-      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -293,19 +310,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.template_matching" />
       <item itemvalue="Python.templ_matching" />
       <item itemvalue="Python.train_detector" />
       <item itemvalue="Python.color_channel_stats" />
       <item itemvalue="Python.cluster_histograms" />
+      <item itemvalue="Python.hu_moments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hu_moments" />
         <item itemvalue="Python.cluster_histograms" />
         <item itemvalue="Python.color_channel_stats" />
         <item itemvalue="Python.train_detector" />
         <item itemvalue="Python.templ_matching" />
-        <item itemvalue="Python.template_matching" />
       </list>
     </recent_temporary>
   </component>
@@ -323,22 +340,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="22" width="1350" height="818" extended-state="0" />
+    <frame x="562" y="22" width="876" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" weight="0.17794254" />
       <window_info anchor="right" x="0" y="0" width="162" height="620" id="Documentation" order="5" side_tool="true" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60770154" weight="0.36652836" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.36615813" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1292049" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23141487" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32365146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39112344" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39112344" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,32 +393,32 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string />
+        <expression-string>np.where([True, True, False, True, False, True])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>np.where([True, True, False, False, True])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>np.where([True, True, False, True])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>np.where([True, False, True])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>np.where([False, True])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>np.where(False, True)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -416,20 +433,13 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>image_path[find_second_last_occurence(image_path, &quot;/&quot;)+1:].split(&quot;/&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/rotation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/translation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -582,16 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contourutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,10 +777,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="186">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contourutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
