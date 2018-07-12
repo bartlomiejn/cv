@@ -10,7 +10,7 @@ def get_args():
         "-o", "--output", required=True, help="Path to the output directory"
     )
     ap.add_argument(
-        "-n", "--num-images", required=True, help="# of images to generate"
+        "-n", "--num-images", type=int, default=500, help="# of images to generate"
     )
     return vars(ap.parse_args())
 

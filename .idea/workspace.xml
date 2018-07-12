@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="" />
+    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -35,13 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_imgs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate_imgs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="55">
+              <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outlier_detection.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,7 +92,7 @@
         <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-99337669/cv2/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="8349" column="30" lean-forward="true" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
+              <caret line="8349" column="30" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -103,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4_imgproc/flip.py" />
         <option value="$PROJECT_DIR$/4_imgproc/imageutils.py" />
         <option value="$PROJECT_DIR$/4_imgproc/crop.py" />
         <option value="$PROJECT_DIR$/src/1_imgproc/crop.py" />
@@ -154,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" />
       </list>
     </option>
   </component>
@@ -230,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hu_moments">
+  <component name="RunManager" selected="Python.outlier_detection">
     <configuration name="cluster_histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +284,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="generate_imgs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py" />
+      <option name="PARAMETERS" value="-n 500 -o ../../output" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="hu_moments" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -285,7 +320,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="templ_matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="outlier_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,48 +328,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_1_2_object_detection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_1_2_object_detection/templ_matching.py" />
-      <option name="PARAMETERS" value="-s ../../assets/wally_source.png -t ../../assets/wally_template.png" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="train_detector" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_object_detection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_object_detection/train_detector.py" />
-      <option name="PARAMETERS" value="-c ../../../datasets/caltech-101/101_ObjectCategories/stop_sign -a ../../../datasets/caltech-101/Annotations/stop_sign -o ../../output" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" />
+      <option name="PARAMETERS" value="-d ../../output" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.templ_matching" />
-      <item itemvalue="Python.train_detector" />
       <item itemvalue="Python.color_channel_stats" />
       <item itemvalue="Python.cluster_histograms" />
       <item itemvalue="Python.hu_moments" />
+      <item itemvalue="Python.generate_imgs" />
+      <item itemvalue="Python.outlier_detection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.outlier_detection" />
+        <item itemvalue="Python.generate_imgs" />
         <item itemvalue="Python.hu_moments" />
         <item itemvalue="Python.cluster_histograms" />
         <item itemvalue="Python.color_channel_stats" />
-        <item itemvalue="Python.train_detector" />
-        <item itemvalue="Python.templ_matching" />
       </list>
     </recent_temporary>
   </component>
@@ -353,11 +370,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="562" y="22" width="876" height="818" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39229843" side_tool="true" weight="0.17794254" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.36615813" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.60770154" visible="true" weight="0.36615813" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
@@ -452,13 +468,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/flip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/mask.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -766,7 +775,7 @@
     <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-99337669/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="8349" column="30" lean-forward="true" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
+          <caret line="8349" column="30" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -803,7 +812,7 @@
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -812,10 +821,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="55">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
