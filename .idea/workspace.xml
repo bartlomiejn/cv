@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" afterDir="false" />
-    </list>
+    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +26,8 @@
       <file leaf-file-name="hu_moments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="17">
+              <caret line="1" column="37" lean-forward="true" selection-end-line="1" selection-end-column="37" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hu_moments_exercise.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py">
+      <file leaf-file-name="zernike_moments.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="327">
+              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -95,39 +92,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contourutils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/contourutils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="labhistogram.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-99337669/cv2/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="8349" column="30" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -151,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4_imgproc/crop.py" />
         <option value="$PROJECT_DIR$/src/1_imgproc/crop.py" />
         <option value="$PROJECT_DIR$/src/1_imgproc/arithm.py" />
         <option value="$PROJECT_DIR$/src/1_imgproc/bitwise_ops.py" />
@@ -202,13 +165,14 @@
         <option value="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
+    <option name="x" value="557" />
     <option name="y" value="22" />
-    <option name="width" value="1108" />
+    <option name="width" value="881" />
     <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -278,25 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hu_moments_exercise">
-    <configuration name="cluster_histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
-      <option name="PARAMETERS" value="-d ../../../assets/color_histograms" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.zernike_moments">
     <configuration name="generate_imgs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,20 +315,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="zernike_moments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.cluster_histograms" />
       <item itemvalue="Python.hu_moments" />
       <item itemvalue="Python.generate_imgs" />
       <item itemvalue="Python.outlier_detection" />
       <item itemvalue="Python.hu_moments_exercise" />
+      <item itemvalue="Python.zernike_moments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zernike_moments" />
         <item itemvalue="Python.hu_moments_exercise" />
         <item itemvalue="Python.hu_moments" />
         <item itemvalue="Python.outlier_detection" />
         <item itemvalue="Python.generate_imgs" />
-        <item itemvalue="Python.cluster_histograms" />
       </list>
     </recent_temporary>
   </component>
@@ -400,16 +364,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="22" width="1108" height="818" extended-state="0" />
+    <frame x="557" y="22" width="881" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.39305815" side_tool="true" visible="true" weight="0.36615813" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6069418" visible="true" weight="0.36615813" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3933254" side_tool="true" visible="true" weight="0.36615813" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6066746" visible="true" weight="0.36615813" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18105066" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3122765" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32365146" />
@@ -500,13 +464,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1_basics/bitwise_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_basics/arithm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -783,9 +740,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="37" lean-forward="true" selection-end-line="1" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-99337669/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="379">
           <caret line="8349" column="30" selection-start-line="8349" selection-start-column="30" selection-end-line="8349" selection-end-column="30" />
         </state>
       </provider>
@@ -800,32 +787,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contourutils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -840,10 +807,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/solidity.py">
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        <state relative-caret-position="55">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -857,20 +827,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
+    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/solidity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="117">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py">
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="327">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
