@@ -1,5 +1,6 @@
 import cv2
 import mahotas
+import imutils
 import numpy as np
 from scipy.spatial import distance as dist
 from contourutils import get_contours
@@ -26,10 +27,39 @@ def describe_shapes(bgr_image):
     return cnts, shape_features
 
 
+def box_points(box):
+    return cv2.cv.BoxPoints(box) if imutils.is_cv2() else cv2.boxPoints(box)
+
+
+def draw_nonmatching_bboxes(image, smallest_idx, cnts):
+    for idx, cnt in enumerate(cnts):
+        if smallest_idx == idx:
+            continue
+        box = cv2.minAreaRect(cnt)
+        box = np.int0(box_points(box))
+        cv2.drawContours(image, [box], -1, (0, 0, 255), 2)
+
+
+def draw_matching_bbox(image):
+    pass
+
+
 pattern = cv2.imread("../../assets/zernike_reference.jpg")
 image = cv2.imread("../../assets/zernike_distractor.jpg")
 _, pattern_features = describe_shapes(pattern)
-_, image_features = describe_shapes(image)
+cnts, image_features = describe_shapes(image)
 dist = dist.cdist(pattern_features, image_features)
-i = np.argmin(dist)
-print(f"pattern_features: {pattern_features}\nimage_features: {image_features}\ndistance: {dist}\nindex of pattern: {i}")
+smallest_idx = np.argmin(dist)
+draw_nonmatching_bboxes(image, smallest_idx, cnts)
+
+box = cv2.minAreaRect(cnts[smallest_idx])
+box = np.int0(box_points(box))
+cv2.drawContours(image, [box], -1, (0, 255, 0), 2)
+x, y, w, h = cv2.boundingRect(cnts[smallest_idx])
+cv2.putText(
+    image, "PATTERN FOUND", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9,
+    (0, 255, 0), 2
+)
+
+cv2.imshow("Image", image)
+cv2.waitKey(0)

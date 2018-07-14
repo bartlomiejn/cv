@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="" />
+    <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +40,8 @@
       <file leaf-file-name="zernike_moments.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+            <state relative-caret-position="73">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -170,9 +172,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="557" />
+    <option name="x" value="626" />
     <option name="y" value="22" />
-    <option name="width" value="881" />
+    <option name="width" value="795" />
     <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -364,16 +366,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="557" y="22" width="881" height="818" extended-state="0" />
+    <frame x="626" y="22" width="795" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3933254" side_tool="true" visible="true" weight="0.36615813" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6066746" visible="true" weight="0.36615813" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3935708" side_tool="true" weight="0.36615813" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6064292" visible="true" weight="0.36615813" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3122765" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14741036" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32365146" />
@@ -836,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="73">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
