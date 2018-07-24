@@ -51,6 +51,7 @@ cnts, image_features = describe_shapes(image)
 dist = dist.cdist(pattern_features, image_features)
 smallest_idx = np.argmin(dist)
 draw_nonmatching_bboxes(image, smallest_idx, cnts)
+print(f"distances: {dist}, smallest: {np.min(dist)}")
 
 box = cv2.minAreaRect(cnts[smallest_idx])
 box = np.int0(box_points(box))
