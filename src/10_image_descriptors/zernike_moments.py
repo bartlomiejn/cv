@@ -19,11 +19,12 @@ def describe_shapes(bgr_image):
         cv2.drawContours(mask, [cnt], -1, 255, -1)
         x, y, w, h = cv2.boundingRect(cnt)
         roi = mask[y:y+h, x:x+w]
-        shape_features.append(mahotas.features.zernike_moments(
+        moments = mahotas.features.zernike_moments(
             roi,
             cv2.minEnclosingCircle(cnt)[1],
             degree=8
-        ))
+        )
+        shape_features.append(moments)
     return cnts, shape_features
 
 
@@ -40,8 +41,15 @@ def draw_nonmatching_bboxes(image, smallest_idx, cnts):
         cv2.drawContours(image, [box], -1, (0, 0, 255), 2)
 
 
-def draw_matching_bbox(image):
-    pass
+def draw_matching_bbox(image, smallest_idx, cnts):
+    box = cv2.minAreaRect(cnts[smallest_idx])
+    box = np.int0(box_points(box))
+    cv2.drawContours(image, [box], -1, (0, 255, 0), 2)
+    x, y, w, h = cv2.boundingRect(cnts[smallest_idx])
+    cv2.putText(
+        image, "PATTERN FOUND", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9,
+        (0, 255, 0), 2
+    )
 
 
 pattern = cv2.imread("../../assets/zernike_reference.jpg")
@@ -51,16 +59,8 @@ cnts, image_features = describe_shapes(image)
 dist = dist.cdist(pattern_features, image_features)
 smallest_idx = np.argmin(dist)
 draw_nonmatching_bboxes(image, smallest_idx, cnts)
+draw_matching_bbox(image, smallest_idx, cnts)
 print(f"distances: {dist}, smallest: {np.min(dist)}")
-
-box = cv2.minAreaRect(cnts[smallest_idx])
-box = np.int0(box_points(box))
-cv2.drawContours(image, [box], -1, (0, 255, 0), 2)
-x, y, w, h = cv2.boundingRect(cnts[smallest_idx])
-cv2.putText(
-    image, "PATTERN FOUND", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9,
-    (0, 255, 0), 2
-)
-
+cv2.imshow("Pattern", pattern)
 cv2.imshow("Image", image)
 cv2.waitKey(0)
