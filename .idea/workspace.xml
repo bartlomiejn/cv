@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyimagesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyimagesearch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,12 +15,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="cluster_histograms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="zernike_moments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="289">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -28,50 +42,12 @@
       </file>
       <file leaf-file-name="haralick_texture.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="outlier_detection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hu_moments.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="37" selection-end-line="1" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_imgs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="euclidean_dist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/euclidean_dist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -144,22 +120,23 @@
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/__init__.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogram.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/pyimagesearch/descriptors/labhistogramgenerator.py" />
-        <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/descriptors/labhistogram.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/generate_imgs.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py" />
         <option value="$USER_HOME$/Desktop/flight.py" />
-        <option value="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
         <option value="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" />
+        <option value="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="838" />
-    <option name="height" value="825" />
+    <option name="width" value="828" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -169,7 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,11 +181,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="RSettings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -235,7 +212,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zernike_moments">
+  <component name="RunManager" selected="Python.haralick_texture">
+    <configuration name="cluster_histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyimagesearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="flight" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,7 +249,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="hu_moments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="haralick_texture" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,8 +261,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" />
+      <option name="PARAMETERS" value="-d ../../assets/haralick/training -t ../../assets/haralick/testing" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -286,24 +281,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/hu_moments_exercise.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="outlier_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pyimagesearch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py" />
-      <option name="PARAMETERS" value="-d ../../output" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -327,19 +304,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.hu_moments" />
-      <item itemvalue="Python.outlier_detection" />
       <item itemvalue="Python.hu_moments_exercise" />
       <item itemvalue="Python.zernike_moments" />
       <item itemvalue="Python.flight" />
+      <item itemvalue="Python.cluster_histograms" />
+      <item itemvalue="Python.haralick_texture" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.haralick_texture" />
         <item itemvalue="Python.zernike_moments" />
+        <item itemvalue="Python.cluster_histograms" />
         <item itemvalue="Python.flight" />
         <item itemvalue="Python.hu_moments_exercise" />
-        <item itemvalue="Python.hu_moments" />
-        <item itemvalue="Python.outlier_detection" />
       </list>
     </recent_temporary>
   </component>
@@ -357,27 +334,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="838" height="825" extended-state="0" />
+    <frame x="4" y="22" width="828" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24497488" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27173913" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.30276382" side_tool="true" visible="true" weight="0.260989" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.307971" side_tool="true" visible="true" weight="0.2580645" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.692029" visible="true" weight="0.2580645" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6972362" visible="true" weight="0.260989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49913645" weight="0.5809906" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5585198" weight="0.39039856" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.55909944" weight="0.39112344" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" x="0" y="0" width="162" height="620" id="Documentation" order="5" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.489335" weight="0.32365146" />
     </layout>
@@ -397,7 +374,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -457,9 +434,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/0_intro/test_install.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/0_intro/load_display_save.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -693,20 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/flight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/flight.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/contours/solidity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -730,11 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/outlier_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="459">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="37" selection-end-line="1" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,9 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,18 +717,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="289">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/1289070979/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="2267" column="8" selection-start-line="2267" selection-start-column="8" selection-end-line="2267" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
