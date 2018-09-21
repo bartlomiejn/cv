@@ -35,6 +35,25 @@ def extract_haralick_features_and_labels_from(args):
     return data, labels
 
 
+def predict_images_from(args, model):
+    for image_path in glob.glob(args["testing"] + "/*.png"):
+        image = cv2.imread(image_path)
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        features = mahotas.features.haralick(gray).mean(axis=0)
+        prediction = model.predict(features.reshape(1, -1))[0]
+        cv2.putText(
+            image,
+            prediction,
+            (20, 30),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            1.0,
+            (0, 255, 0),
+            3
+        )
+        cv2.imshow("Image", image)
+        cv2.waitKey(0)
+
+
 print("[INFO] Extracting features")
 args = parsed_args()
 data, labels = extract_haralick_features_and_labels_from(args)
@@ -42,12 +61,4 @@ print("[INFO] Training model")
 model = LinearSVC(C=10.0, random_state=42)
 model.fit(data, labels)
 print("[INFO] Classifying images")
-
-for image_path in glob.glob(args["testing"] + "/*.png"):
-    image = cv2.imread(image_path)
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    features = mahotas.features.haralick(gray).mean(axis=0)
-    prediction = model.predict(features.reshape(1, -1))[0]
-    cv2.putText(image, prediction, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 0), 3)
-    cv2.imshow("Image", image)
-    cv2.waitKey(0)
+predict_images_from(args, model)
