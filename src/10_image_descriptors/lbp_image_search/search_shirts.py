@@ -1,5 +1,5 @@
 from __future__ import print_function
-from descriptors import LocalBinaryPatterns
+from descriptors.localbinarypatterns import LocalBinaryPatterns
 from imutils import paths
 import numpy as np
 import argparse
@@ -51,8 +51,10 @@ for k, features in index.items():
 
 results = sorted([(v, k) for (k, v) in results.items()])[:3]
 
+print(f"{results}")
+
 for i, (score, filename) in enumerate(results):
     print("#%d. %s: %.4f" % (i+1, filename, score))
     image = cv2.imread(args["dataset"] + "/" + filename)
     cv2.imshow("Result #{}".format(i+1), image)
-    cv2.waitKey(0)
+cv2.waitKey(0)
