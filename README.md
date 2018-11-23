@@ -1,3 +1,3 @@
 # cv-py
 
-Learning repository for Python & computer vision algorithms
+Computer Vision in Python
