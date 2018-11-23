@@ -1,3 +1,3 @@
-# cv-py
+# cv
 
 Computer Vision in Python
