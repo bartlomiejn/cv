@@ -13,10 +13,11 @@ b = np.random.randn(3)
 original = cv2.imread("beagle.png")
 image = cv2.resize(original, (32, 32)).flatten()
 
-# Linear scoring function: dot product between the weight matrix and image px
-# with bias added
+# Linear scoring function: dot product between the weight matrix and image
+# pixels with bias added
 scores = W.dot(image) + b
 
+# Print out scores for each label and "predicted" class
 for label, score in zip(labels, scores):
     print(f"[INFO] {label}: {score:.2f}")
 cv2.putText(
