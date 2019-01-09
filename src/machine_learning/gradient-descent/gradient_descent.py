@@ -11,8 +11,7 @@ def sigmoid_activation(x):
 
 
 def predict(X, W):
-    dot_product = X.dot(W)
-    preds = sigmoid_activation(dot_product)
+    preds = sigmoid_activation(X.dot(W))
     # Threshold the outputs to binary class labels using a step function
     preds[preds <= 0.5] = 0
     preds[preds > 0] = 1
@@ -25,7 +24,8 @@ ap.add_argument("-a", "--alpha", type=float, default=0.01, help="Learning rate")
 args = vars(ap.parse_args())
 
 # Generate a 2 class classification problem with 1000 data points, where each
-# point is a 2-dim feature vector
+# point is a 2-dim feature vector. Insert a column of 1s as the last entry in
+# the feature matrix
 X, y = make_blobs(
     n_samples=1000,
     n_features=2,
@@ -34,8 +34,6 @@ X, y = make_blobs(
     random_state=1
 )
 y = y.reshape((y.shape[0], 1))
-
-# Insert a column of 1s as the last entry in the feature matrix
 X = np.c_[X, np.ones(X.shape[0])]
 
 train_X, test_X, train_y, test_y = train_test_split(
@@ -56,7 +54,7 @@ for epoch in np.arange(0, args["epochs"]):
     losses.append(loss)
     # Gradient descent update is the dot product between features and prediction
     # errors. We take a small step towards a set of more optimal parameters
-    # based on the alpha parameter
+    # based on the alpha parameter after each epoch
     gradient = train_X.T.dot(error)
     W += -args["alpha"] * gradient
     if epoch == 0 or (epoch + 1) % 5 == 0:
@@ -66,17 +64,17 @@ print("[INFO] Evaluating")
 preds = predict(test_X, W)
 print(classification_report(test_y, preds))
 
-
-def to_tuple(x): return (x,)
-
-
-# Plot the classification data
+# Plot the classification data and loss over time
 plt.style.use("ggplot")
 plt.figure()
 plt.title("data")
-plt.scatter(test_X[:, 0], test_X[:, 1], marker="o", c=test_y.ravel().tolist(), s=30)
-
-# Plot the loss over time
+plt.scatter(
+    test_X[:, 0],
+    test_X[:, 1],
+    marker="o",
+    c=test_y.ravel().tolist(),
+    s=30
+)
 plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, args["epochs"]), losses)
