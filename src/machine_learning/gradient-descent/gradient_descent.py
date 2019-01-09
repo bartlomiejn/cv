@@ -66,11 +66,15 @@ print("[INFO] Evaluating")
 preds = predict(test_X, W)
 print(classification_report(test_y, preds))
 
+
+def to_tuple(x): return (x,)
+
+
 # Plot the classification data
 plt.style.use("ggplot")
 plt.figure()
 plt.title("data")
-plt.scatter(test_X[:, 0], test_X[:, 1], marker="o", c=test_y, s=30)
+plt.scatter(test_X[:, 0], test_X[:, 1], marker="o", c=test_y.ravel().tolist(), s=30)
 
 # Plot the loss over time
 plt.style.use("ggplot")
