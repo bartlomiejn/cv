@@ -1,7 +1,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.datasets import make_blobs
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 from argparse import ArgumentParser
 
@@ -63,6 +63,29 @@ def next_batch(X, y, batch_size):
         yield (X[i:(i + batch_size)], y[i:(i + batch_size)])
 
 
+def plot_classification(test_X, test_y):
+    plt.style.use("ggplot")
+    plt.figure()
+    plt.title("data")
+    plt.scatter(
+        test_X[:, 0],
+        test_X[:, 1],
+        marker="o",
+        c=test_y.ravel().tolist(),
+        s=30
+    )
+
+
+def plot_losses(epochs_count, losses):
+    plt.style.use("ggplot")
+    plt.figure()
+    plt.plot(np.arange(0, epochs_count), losses)
+    plt.title("Training loss")
+    plt.xlabel("Epoch #")
+    plt.ylabel("Loss")
+    plt.show()
+
+
 args = parse_args()
 epochs_count = args["epochs"]
 batch_size = args["batch_size"]
@@ -94,3 +117,5 @@ for epoch in np.arange(0, epochs_count):
 print("[INFO] Evaluating")
 preds = predict(test_X, W)
 print(classification_report(test_y, preds))
+plot_classification(test_X, test_y)
+plot_losses(epochs_count, losses)
