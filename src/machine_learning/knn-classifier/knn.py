@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(0, '..')
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
