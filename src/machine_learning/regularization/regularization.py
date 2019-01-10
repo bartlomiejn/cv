@@ -40,7 +40,7 @@ for r in None, "l1", "l2":
         penalty=r,
         max_iter=10,
         learning_rate="constant",
-        eta0=0.01,
+        eta0=0.03,
         random_state=42
     )
     model.fit(train_X, train_y)

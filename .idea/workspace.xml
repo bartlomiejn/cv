@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/support/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/support/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/support/datasets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/support/datasets/datasetloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/support/datasets/datasetloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/support/preprocessing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/support/preprocessing/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/knn-classifier/support/preprocessing/preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/support/preprocessing/preprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="regularization.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/machine_learning/regularization/regularization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="384">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -43,8 +38,8 @@
       <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="17">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -153,6 +148,17 @@
             <path>
               <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+              <item name="animals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -160,13 +166,6 @@
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="knn-classifier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
@@ -267,7 +266,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" />
-      <option name="PARAMETERS" value="-d ../../datasets/animals" />
+      <option name="PARAMETERS" value="-d ../../../datasets/animals" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -359,7 +358,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49761525" weight="0.22386679" />
       <window_info id="Structure" order="1" sideWeight="0.5006896" side_tool="true" weight="0.17885533" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" weight="0.22756706" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5585198" weight="0.39039856" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5585198" weight="0.38958332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -388,7 +387,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -576,15 +575,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/machine_learning/regularization/regularization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="384">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
         </state>
       </provider>
     </entry>
