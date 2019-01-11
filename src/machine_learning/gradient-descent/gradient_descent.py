@@ -43,12 +43,18 @@ train_X, test_X, train_y, test_y = train_test_split(
     random_state=42
 )
 
+
+def train():
+
+
+
 # Initialize the weight matrix with a uniform distribution and list of losses
 W = np.random.randn(X.shape[1], 1)
 losses = []
 
 for epoch in np.arange(0, args["epochs"]):
-    preds = sigmoid_activation(train_X.dot(W))
+    scores =  train_X.dot(W)
+    preds = sigmoid_activation(scores)
     error = preds - train_y
     loss = np.sum(error ** 2)
     losses.append(loss)

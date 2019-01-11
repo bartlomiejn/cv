@@ -102,13 +102,12 @@ losses = []
 print("[INFO] Training")
 for epoch in np.arange(0, epochs_count):
     total_epoch_loss = []
-    for batch_x, batch_y in next_batch(X, y, batch_size):
-        preds = sigmoid_activation(batch_x.dot(W))
+    for batch_X, batch_y in next_batch(train_X, train_y, batch_size):
+        preds = sigmoid_activation(batch_X.dot(W))
         error = preds - batch_y
         # Perform gradient descent update on a single batch rather than epoch
-        gradient = batch_x.T.dot(error)
+        gradient = batch_X.T.dot(error)
         W += -learning_rate * gradient
-        # Update total epoch loss
         total_epoch_loss.append(np.sum(error ** 2))
     loss = np.average(total_epoch_loss)
     losses.append(loss)

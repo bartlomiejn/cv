@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/intro/img.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/intro/load_display_save.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/intro/pyimagesearch_gurus_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/intro/test_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,32 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sgd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/machine_learning/sgd/sgd.py">
+      <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regularization.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/machine_learning/regularization/regularization.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="223">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -70,11 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/1_kernels/hat.py" />
-        <option value="$PROJECT_DIR$/src/1_kernels/morph_ops.py" />
-        <option value="$PROJECT_DIR$/src/1_kernels/blur.py" />
-        <option value="$PROJECT_DIR$/src/1_colorspaces/color.py" />
-        <option value="$PROJECT_DIR$/src/1_basics/color_spaces.py" />
         <option value="$PROJECT_DIR$/src/1_basics/gradient.py" />
         <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
         <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
@@ -121,14 +100,19 @@
         <option value="$PROJECT_DIR$/src/10_image_descriptors/lbp_image_search/search_shirts.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/support/nn/__init__.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1281" />
     <option name="y" value="-291" />
-    <option name="width" value="1036" />
-    <option name="height" value="1057" />
+    <option name="width" value="1032" />
+    <option name="height" value="1009" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -148,17 +132,6 @@
             <path>
               <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-              <item name="animals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -172,7 +145,15 @@
               <item name="cv-py" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="regularization" type="462c0819:PsiDirectoryNode" />
+              <item name="neural-networks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="neural-networks" type="462c0819:PsiDirectoryNode" />
+              <item name="perceptron" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
@@ -180,6 +161,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cv-py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cv-py" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="machine_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="nn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,8 +205,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.regularization">
-    <configuration name="cluster_histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.gradient_descent">
+    <configuration name="gradient_descent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -225,17 +214,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/gradient-descent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="haralick_texture" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="linear_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,12 +232,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/linear-classifier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" />
-      <option name="PARAMETERS" value="-d ../../assets/haralick/training -t ../../assets/haralick/testing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/linear-classifier/linear_example.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -289,7 +278,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="zernike_moments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sgd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,30 +286,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/sgd" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/zernike_moments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.zernike_moments" />
-      <item itemvalue="Python.cluster_histograms" />
-      <item itemvalue="Python.haralick_texture" />
       <item itemvalue="Python.search_shirts" />
       <item itemvalue="Python.regularization" />
+      <item itemvalue="Python.sgd" />
+      <item itemvalue="Python.linear_example" />
+      <item itemvalue="Python.gradient_descent" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gradient_descent" />
+        <item itemvalue="Python.linear_example" />
+        <item itemvalue="Python.sgd" />
         <item itemvalue="Python.regularization" />
         <item itemvalue="Python.search_shirts" />
-        <item itemvalue="Python.zernike_moments" />
-        <item itemvalue="Python.haralick_texture" />
-        <item itemvalue="Python.cluster_histograms" />
       </list>
     </recent_temporary>
   </component>
@@ -347,18 +336,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1281" y="-291" width="1036" height="1057" extended-state="0" />
+    <frame x="1281" y="-291" width="1032" height="1009" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.22167487" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.22255193" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293247" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5023847" side_tool="true" weight="0.22756706" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6888194" visible="true" weight="0.359375" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.11780637" side_tool="true" visible="true" weight="0.3892544" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6878808" weight="0.22916667" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49920508" weight="0.19056429" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49761525" weight="0.22386679" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49655172" weight="0.2236842" />
       <window_info id="Structure" order="1" sideWeight="0.5006896" side_tool="true" weight="0.17885533" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" weight="0.22756706" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5585198" weight="0.38958332" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8821936" weight="0.3892544" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -377,6 +366,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/machine_learning/sgd/sgd.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -387,7 +393,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -399,6 +405,16 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>print(batch_X)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>batch_X</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>np.where([True, True, False, True, False, True])</expression-string>
         <language-id>Python</language-id>
@@ -439,38 +455,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>image_path[find_second_last_occurence(image_path, &quot;/&quot;)+1:].split(&quot;/&quot;)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/tetris.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/canny.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/approx_receipt.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/contour_approx.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/basics.py" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-420385733/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1277" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/grad_orientation.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/contours/sort_contours.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/histograms/histogram.py" />
-    <entry file="file://$PROJECT_DIR$/src/imageutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_basics/channels.py" />
     <entry file="file://$USER_HOME$/.venvs/cvenv/lib/python3.6/site-packages/imutils/paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -563,12 +550,98 @@
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/haralick_texture.py" />
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/k_means_clustering/cluster_histograms.py" />
     <entry file="file://$PROJECT_DIR$/src/10_image_descriptors/lbp_image_search/search_shirts.py" />
+    <entry file="file://$USER_HOME$/.venvs/gurus/lib/python3.7/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.venvs/gurus/lib/python3.7/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1919" column="4" selection-start-line="1919" selection-start-column="4" selection-end-line="1919" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.venvs/gurus/lib/python3.7/site-packages/sklearn/datasets/samples_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="716" column="37" lean-forward="true" selection-start-line="716" selection-start-column="37" selection-end-line="716" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/linear-classifier/linear_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/machine_learning/sgd/sgd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+        <state relative-caret-position="1921">
+          <caret line="113" column="42" lean-forward="true" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intro/img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intro/load_display_save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intro/test_install.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/regularization/regularization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basics/histograms/color_hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <marker date="1547202694501" expanded="true" signature="1191:1195" ph="..." />
           </folding>
         </state>
       </provider>
@@ -580,10 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/machine_learning/regularization/regularization.py">
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="223">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
