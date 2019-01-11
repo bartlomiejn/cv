@@ -1,3 +1,5 @@
 # cv
 
-Various Computer Vision algorithms implemented as practical object recognition and image classification sample apps in `Python` with usage of `OpenCV`, `Mahotas`, `SciPy` and various other libraries.
+Various implementations related to computer vision and machine learning including image processing operations, image descriptors, object recognition and linear classification.
+
+Written in `python` with usage of `OpenCV`, `scikit`, `numpy`, `mahotas`, `dlib`, `matplotlib` and other libraries
