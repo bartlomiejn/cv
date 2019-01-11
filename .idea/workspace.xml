@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3e238f-1085-4263-b895-00a744740513" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_or.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/intro/img.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/intro/load_display_save.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/intro/pyimagesearch_gurus_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/intro/test_install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +15,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="356">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perc_or.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_or.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perc_and.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_and.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perc_xor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_xor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradient_descent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+                <marker date="1547202694501" expanded="true" signature="1191:1195" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_tricks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.venvs/gurus/lib/python3.7/site-packages/numpy/lib/index_tricks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="478" selection-start-line="478" selection-end-line="478" />
             </state>
           </provider>
         </entry>
@@ -54,9 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/1_basics/gradient.py" />
-        <option value="$PROJECT_DIR$/src/1_basics/morph_ops.py" />
-        <option value="$PROJECT_DIR$/src/1_basics/threshold.py" />
         <option value="$PROJECT_DIR$/src/1_basics/grad_orientation.py" />
         <option value="$PROJECT_DIR$/src/1_basics/edge_detect.py" />
         <option value="$PROJECT_DIR$/src/1_basics/canny.py" />
@@ -102,9 +153,12 @@
         <option value="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py" />
-        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/support/nn/__init__.py" />
         <option value="$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_or_example.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_and_example.py" />
+        <option value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_xor_example.py" />
       </list>
     </option>
   </component>
@@ -183,6 +237,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron" />
       <recent name="$PROJECT_DIR$/4_imgproc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -205,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gradient_descent">
+  <component name="RunManager" selected="Python.perc_xor_example">
     <configuration name="gradient_descent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,7 +297,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="regularization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="perc_and_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,17 +305,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/regularization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/regularization/regularization.py" />
-      <option name="PARAMETERS" value="-d ../../../datasets/animals" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_and.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="search_shirts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="perc_or_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,17 +323,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/10_image_descriptors/lbp_image_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/10_image_descriptors/lbp_image_search/search_shirts.py" />
-      <option name="PARAMETERS" value="-d ../../../assets/lbp/dataset -q ../../../assets/lbp/queries/query_02.jpg" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_or.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sgd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="perc_xor_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyimagesearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,30 +341,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/sgd" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/sgd/sgd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_xor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.search_shirts" />
-      <item itemvalue="Python.regularization" />
-      <item itemvalue="Python.sgd" />
       <item itemvalue="Python.linear_example" />
       <item itemvalue="Python.gradient_descent" />
+      <item itemvalue="Python.perc_or_example" />
+      <item itemvalue="Python.perc_and_example" />
+      <item itemvalue="Python.perc_xor_example" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.perc_xor_example" />
+        <item itemvalue="Python.perc_and_example" />
+        <item itemvalue="Python.perc_or_example" />
         <item itemvalue="Python.gradient_descent" />
         <item itemvalue="Python.linear_example" />
-        <item itemvalue="Python.sgd" />
-        <item itemvalue="Python.regularization" />
-        <item itemvalue="Python.search_shirts" />
       </list>
     </recent_temporary>
   </component>
@@ -341,8 +396,8 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49931034" visible="true" weight="0.22255193" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293247" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.11780637" side_tool="true" visible="true" weight="0.3892544" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6878808" weight="0.22916667" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.31355095" side_tool="true" visible="true" weight="0.36842105" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68644905" visible="true" weight="0.36842105" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49920508" weight="0.19056429" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49655172" weight="0.2236842" />
       <window_info id="Structure" order="1" sideWeight="0.5006896" side_tool="true" weight="0.17885533" />
@@ -458,15 +513,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.venvs/cvenv/lib/python3.6/site-packages/imutils/paths.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/2_object_detection/templ_matching.py" />
-    <entry file="file://$PROJECT_DIR$/src/1_basics/blob_extraction/connected_comp.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/histograms/mask_hist.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/histograms/equalize_hist.py" />
     <entry file="file://$PROJECT_DIR$/src/1_basics/histograms/color_hist.py" />
@@ -632,8 +678,19 @@
     <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perceptron.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/.venvs/gurus/lib/python3.7/site-packages/numpy/lib/index_tricks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="478" selection-start-line="478" selection-end-line="478" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/machine_learning/gradient-descent/gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -648,15 +705,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/machine_learning/knn-classifier/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state>
+          <caret selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/machine_learning/support/nn/perceptron.py">
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_or.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_and.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/machine_learning/neural-networks/perceptron/perc_xor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
