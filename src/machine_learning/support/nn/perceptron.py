@@ -12,9 +12,12 @@ class Perceptron:
         return 1 if x > 0 else 0
 
     def fit(self, X, y, epochs=10):
+        # Insert a column of 1s as bias
         X = np.c_[X, np.ones((X.shape[0]))]
         for _ in np.arange(0, epochs):
             for x, target in zip(X, y):
+                # Pass the dot product of the feature vector with weight vector
+                # to the step function
                 pred = self.step(np.dot(x, self.W))
                 if pred != target:
                     error = pred - target
