@@ -22,7 +22,6 @@ args = vars(ap.parse_args())
 print("Loading MNIST dataset")
 
 mnist_path = os.path.join(os.getcwd(), "../../../datasets/mnist/mnist-original.mat")
-
 mnist_raw = loadmat(mnist_path)
 dataset = {
     "data": mnist_raw["data"].T,
@@ -31,9 +30,9 @@ dataset = {
     "DESCR": "mldata.org dataset: mnist-original",
 }
 
-data = dataset["data"].astype("float") / 255.0
+data = mnist_raw["data"].T.astype("float") / 255.0
 train_x, test_x, train_y, test_y \
-    = train_test_split(data, dataset["target"], test_size=0.25)
+    = train_test_split(data, mnist_raw["label"][0], test_size=0.25)
 
 lb = LabelBinarizer()
 train_y = lb.fit_transform(train_y)
@@ -71,8 +70,8 @@ plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, 100), H.history["loss"], label="train_loss")
 plt.plot(np.arange(0, 100), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, 100), H.history["acc"], label="train_acc")
-plt.plot(np.arange(0, 100), H.history["val_acc"], label="val_acc")
+plt.plot(np.arange(0, 100), H.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, 100), H.history["val_accuracy"], label="val_acc")
 plt.title("Training loss and accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
