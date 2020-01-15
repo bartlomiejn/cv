@@ -19,7 +19,7 @@ ap.add_argument(
     help="path to the output loss/accuracy plot")
 args = vars(ap.parse_args())
 
-print("Loading MNIST dataset")
+print("Loading MNIST original")
 
 mnist_path = os.path.join(os.getcwd(), "../../../datasets/mnist/mnist-original.mat")
 mnist_raw = loadmat(mnist_path)

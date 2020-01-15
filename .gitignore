@@ -1,5 +1,7 @@
 __pycache__/
-output/*
-output
+
 **/.idea
 .idea
+
+datasets
+output
