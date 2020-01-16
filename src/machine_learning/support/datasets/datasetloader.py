@@ -10,12 +10,14 @@ class DatasetLoader:
 			self.preprocessors = []
 
 	def load(self, image_paths, verbose=-1):
+		"""
+		Load the image and extract the class label assuming the following
+		format for the path:
+		/{path to dataset}/{class}/{image}.jpg
+		"""
 		data = []
 		labels = []
 		for (i, image_path) in enumerate(image_paths):
-			# load the image and extract the class label assuming
-			# that our path has the following format:
-			# /path/to/dataset/{class}/{image}.jpg
 			image = cv2.imread(image_path)
 			label = image_path.split(os.path.sep)[-2]
 			if self.preprocessors is not None:
