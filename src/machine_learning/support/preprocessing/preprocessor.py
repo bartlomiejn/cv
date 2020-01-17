@@ -6,7 +6,7 @@ class ImageToArrayPreprocessor:
     def __init__(self, data_format=None):
         self.data_format = data_format
 
-    def process(self, image):
+    def preprocess(self, image):
         """
         Returns the image with channel ordering based on Keras configuration
         json.
