@@ -1,4 +1,4 @@
-import sys; sys.path.insert(0, '../../..')
+import sys; sys.path.insert(0, '../..')
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import argparse
 
-
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True, help="Path to input dataset")
+ap.add_argument("-o", "--output", required=True, help="Path to output")
 args = vars(ap.parse_args())
 
 image_paths = list(paths.list_images(args["dataset"]))
@@ -66,7 +66,7 @@ plt.ylabel("Loss/Accuracy")
 plt.legend()
 plt.savefig(args["output"])
 
-print("Serialize model and saves")
+print("Serialize model and save to file")
 
 model_json = model.to_json()
 with open("shallownet.json", "w") as file:
