@@ -35,7 +35,7 @@ test_y = LabelBinarizer().fit_transform(test_y)
 
 print("Compiling")
 
-sgd = SGD(lr=0.005)
+sgd = SGD(lr=0.004)
 model = ShallowNet.build(width=32, height=32, depth=3, classes=3)
 model.compile(loss="categorical_crossentropy", optimizer=sgd,
     metrics=["accuracy"])
