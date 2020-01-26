@@ -1,14 +1,13 @@
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+import matplotlib.pyplot as plt
+import numpy as np
 from keras.models import Sequential
 from keras.layers.core import Dense
 from keras.optimizers import SGD
-from sklearn import datasets
-import matplotlib.pyplot as plt
-import numpy as np
-import argparse
 from scipy.io import loadmat
+import argparse
 import os
 
 ap = argparse.ArgumentParser()
