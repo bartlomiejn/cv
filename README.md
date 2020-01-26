@@ -1,6 +1,6 @@
 # cv
 
-Usage of classical computer vision techniques and machine/deep learning including:
+Usage of classical computer vision techniques and machine/deep learning for image recognition including:
 - Image processing operations
 - Feature extraction
 - Object recognition 
