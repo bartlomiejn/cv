@@ -1,0 +1,2 @@
+data_batch_* filter=lfs diff=lfs merge=lfs -text
+test_batch filter=lfs diff=lfs merge=lfs -text
