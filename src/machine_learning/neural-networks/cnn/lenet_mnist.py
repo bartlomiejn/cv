@@ -4,7 +4,6 @@ from support.nn.lenet import LeNet
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-from sklearn import datasets
 from keras import backend as K
 from keras.optimizers import SGD
 from scipy.io import loadmat
