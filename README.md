@@ -1,3 +1,10 @@
 # cv
 
-Various implementations related to computer vision and machine learning including image processing operations, feature extraction, object recognition and linear classification.
+Usage of classical computer vision techniques and machine/deep learning for image recognition including:
+- Image processing operations
+- Feature extraction
+- Object recognition 
+- Classification:
+  - Linear
+  - Neural networks
+  - Convolutional neural networks
