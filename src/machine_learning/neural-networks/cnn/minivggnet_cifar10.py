@@ -112,6 +112,6 @@ plt.savefig(args["output"])
 print("Serialize model and save to file")
 
 model_json = model.to_json()
-with open(f"{args['model']}.json", "w") as file:
+with open(f"{args['model-prefix']}.json", "w") as file:
     file.write(model_json)
-model.save_weights(f"{args['model']}.h5")
+model.save_weights(f"{args['model-prefix']}.h5")
