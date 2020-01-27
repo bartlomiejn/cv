@@ -1,13 +1,11 @@
 import sys; sys.path.insert(0, '../..')
 from sklearn.preprocessing import LabelBinarizer
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from support.nn.shallownet import ShallowNet
 from keras.optimizers import SGD
 from keras import backend as K
 from keras.datasets.cifar import load_batch
 from keras.datasets import cifar10
-from imutils import paths
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
@@ -79,8 +77,10 @@ model.compile(loss="categorical_crossentropy", optimizer=opt,
 
 print("Training")
 
+epoch_count = 40
+
 H = model.fit(train_x, train_y, validation_data=(test_x, test_y), batch_size=32,
-    epochs=40, verbose=1)
+    epochs=epoch_count, verbose=1)
 
 print("Evaluating")
 
@@ -94,10 +94,10 @@ print("Plotting the loss/accuracy")
 
 plt.style.use("ggplot")
 plt.figure()
-plt.plot(np.arange(0, 100), H.history["loss"], label="train_loss")
-plt.plot(np.arange(0, 100), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, 100), H.history["accuracy"], label="train_accuracy")
-plt.plot(np.arange(0, 100), H.history["val_accuracy"], label="val_accuracy")
+plt.plot(np.arange(0, epoch_count), H.history["loss"], label="train_loss")
+plt.plot(np.arange(0, epoch_count), H.history["val_loss"], label="val_loss")
+plt.plot(np.arange(0, epoch_count), H.history["accuracy"], label="train_accuracy")
+plt.plot(np.arange(0, epoch_count), H.history["val_accuracy"], label="val_accuracy")
 plt.title("Training loss and accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Loss/Accuracy")

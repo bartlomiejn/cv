@@ -6,7 +6,6 @@ from keras import backend as K
 
 
 class MiniVGGNet:
-
     @staticmethod
     def build(width, height, depth, classes):
         model = Sequential()
