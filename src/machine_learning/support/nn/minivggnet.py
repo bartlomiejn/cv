@@ -7,7 +7,7 @@ from keras import backend as K
 
 class MiniVGGNet:
     @staticmethod
-    def build(width, height, depth, classes):
+    def build(width, height, depth, classes, batch_norm=True):
         model = Sequential()
         input_shape = (height, width, depth)
         chan_dim = -1
@@ -20,11 +20,13 @@ class MiniVGGNet:
 
         model.add(Conv2D(32, (3, 3), padding="same", input_shape=input_shape))
         model.add(Activation("relu"))
-        model.add(BatchNormalization(axis=chan_dim))
+        if batch_norm:
+            model.add(BatchNormalization(axis=chan_dim))
 
         model.add(Conv2D(32, (3, 3), padding="same"))
         model.add(Activation("relu"))
-        model.add(BatchNormalization(axis=chan_dim))
+        if batch_norm:
+            model.add(BatchNormalization(axis=chan_dim))
 
         model.add(MaxPooling2D(pool_size=(2, 2)))
         model.add(Dropout(0.25))
@@ -33,11 +35,13 @@ class MiniVGGNet:
 
         model.add(Conv2D(64, (3, 3), padding="same", input_shape=input_shape))
         model.add(Activation("relu"))
-        model.add(BatchNormalization(axis=chan_dim))
+        if batch_norm:
+            model.add(BatchNormalization(axis=chan_dim))
 
         model.add(Conv2D(64, (3, 3), padding="same"))
         model.add(Activation("relu"))
-        model.add(BatchNormalization(axis=chan_dim))
+        if batch_norm:
+            model.add(BatchNormalization(axis=chan_dim))
 
         model.add(MaxPooling2D(pool_size=(2, 2)))
         model.add(Dropout(0.25))
@@ -47,7 +51,9 @@ class MiniVGGNet:
         model.add(Flatten())
         model.add(Dense(512))
         model.add(Activation("relu"))
-        model.add(BatchNormalization())
+        if batch_norm:
+            model.add(BatchNormalization())
+
         model.add(Dropout(0.5))
 
         # Softmax

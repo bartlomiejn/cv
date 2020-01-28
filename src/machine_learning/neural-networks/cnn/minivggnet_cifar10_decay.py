@@ -3,12 +3,20 @@ from support.nn.minivggnet import MiniVGGNet
 from support.datasets.cifar10 import load_cifar10
 from keras.datasets import cifar10
 from keras.optimizers import SGD
+from keras.callbacks import LearningRateScheduler
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
 import platform
+
+
+def step_decay(epoch):
+    init_alpha = 0.01
+    factor = 0.25
+    drop_every = 5
+    return float(init_alpha * (factor ** np.floor((1 + epoch) / drop_every)))
 
 
 ap = argparse.ArgumentParser()
@@ -27,7 +35,8 @@ args = vars(ap.parse_args())
 print("Loading CIFAR-10")
 
 if platform.system() == "Darwin":
-    (train_x, train_y), (test_x, test_y) = load_cifar10("../../../../datasets/cifar10")
+    (train_x, train_y), (test_x, test_y) = \
+        load_cifar10("../../../../datasets/cifar10")
 else:
     (train_x, train_y), (test_x, test_y) = cifar10.load_data()
 
@@ -44,17 +53,17 @@ label_names = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog",
 print("Compiling model")
 
 sgd = SGD(lr=0.01, decay=0.01/40, momentum=0.9, nesterov=True)
-model = MiniVGGNet.build(width=32, height=32, depth=3, classes=10,
-    batch_norm=False)
+model = MiniVGGNet.build(width=32, height=32, depth=3, classes=10)
 model.compile(loss="categorical_crossentropy", optimizer=sgd,
     metrics=["accuracy"])
 
 print("Training network")
 
 epoch_count = 40
+callbacks = [LearningRateScheduler(step_decay)]
 
 H = model.fit(train_x, train_y, validation_data=(test_x, test_y), batch_size=64,
-    epochs=epoch_count, verbose=1)
+    epochs=epoch_count, verbose=1, callbacks=callbacks)
 
 print("Evaluating network")
 
