@@ -1,6 +1,7 @@
 import sys; sys.path.insert(0, '.')
 from support.nn.minivggnet import MiniVGGNet
 from support.datasets.cifar10 import load_cifar10
+from support.logger.trainingmonitor import TrainingMonitor
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import LearningRateScheduler
@@ -10,13 +11,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import argparse
 import platform
-
-
-def step_decay(epoch):
-    init_alpha = 0.01
-    factor = 0.5
-    drop_every = 5
-    return float(init_alpha * (factor ** np.floor((1 + epoch) / drop_every)))
+import os
+import uuid
 
 
 ap = argparse.ArgumentParser()
@@ -32,7 +28,7 @@ ap.add_argument(
     help="Model file to save or load if the file already exists")
 args = vars(ap.parse_args())
 
-print("Loading CIFAR-10")
+print(f"PID: {os.getpid()} Loading CIFAR-10")
 
 if platform.system() == "Darwin":
     (train_x, train_y), (test_x, test_y) = \
@@ -60,10 +56,12 @@ model.compile(loss="categorical_crossentropy", optimizer=sgd,
 print("Training network")
 
 epoch_count = 40
-callbacks = [LearningRateScheduler(step_decay)]
+fig_path = os.path.sep.join([args["output"], f"_{os.getpid()}.png"])
+json_path = os.path.sep.join([args["output"], f"_{os.getpid()}.json"])
+callbacks = [TrainingMonitor(fig_path, json_path=json_path)]
 
-H = model.fit(train_x, train_y, validation_data=(test_x, test_y), batch_size=128,
-    epochs=epoch_count, verbose=1, callbacks=callbacks)
+H = model.fit(train_x, train_y, validation_data=(test_x, test_y),
+    batch_size=128, epochs=epoch_count, callbacks=callbacks, verbose=1)
 
 print("Evaluating network")
 
@@ -73,22 +71,6 @@ print(classification_report(
     test_y.argmax(axis=1),
     predictions.argmax(axis=1),
     target_names=label_names))
-
-print("Plot history")
-
-plt.style.use("ggplot")
-plt.figure()
-plt.plot(np.arange(0, epoch_count), H.history["loss"], label="train_loss")
-plt.plot(np.arange(0, epoch_count), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, epoch_count), H.history["accuracy"],
-    label="train_accuracy")
-plt.plot(np.arange(0, epoch_count), H.history["val_accuracy"],
-    label="val_accuracy")
-plt.title("Training loss and accuracy")
-plt.xlabel("Epoch")
-plt.ylabel("Loss/Accuracy")
-plt.legend()
-plt.savefig(args["output"])
 
 print("Serialize model and save to file")
 
