@@ -62,7 +62,7 @@ json_fn = os.path.join(os.getcwd(), args["output"],
 monitor = [TrainingMonitor(fig_fn, json_path=json_fn)]
 
 checkpoint_fn = os.path.join(os.getcwd(), args["weights"],
-    "minivggnet_cifar10_{epoch:03d}_{val_accuracy:.4f}.hdf5")
+    "minivggnet_cifar10_checkpoint.hdf5")
 checkpoint = ModelCheckpoint(checkpoint_fn, monitor="val_accuracy", mode="min",
     save_best_only=True, verbose=1)
 
