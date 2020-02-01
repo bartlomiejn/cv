@@ -2,10 +2,10 @@ import sys; sys.path.insert(0, '../..')
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
 from support.nn.shallownet import ShallowNet
-from keras.optimizers import SGD
-from keras import backend as K
-from keras.datasets.cifar import load_batch
-from keras.datasets import cifar10
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras import backend as K
+from tensorflow.keras.datasets.cifar import load_batch
+from tensorflow.keras.datasets import cifar10
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse

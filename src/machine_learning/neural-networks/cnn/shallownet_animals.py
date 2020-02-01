@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report
 from support.preprocessing.preprocessor import ImageToArrayPreprocessor, ResizePreprocessor
 from support.datasets.datasetloader import DatasetLoader
 from support.nn.shallownet import ShallowNet
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 from imutils import paths
 import matplotlib.pyplot as plt
 import numpy as np

@@ -1,7 +1,7 @@
-from keras.models import Sequential
-from keras.layers.core import Activation, Flatten, Dense
-from keras.layers.convolutional import Conv2D, MaxPooling2D
-from keras import backend as K
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Activation, Flatten, Dense
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
+from tensorflow.keras import backend as K
 
 
 class LeNet:
