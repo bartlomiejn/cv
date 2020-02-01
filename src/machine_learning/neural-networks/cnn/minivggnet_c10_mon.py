@@ -4,11 +4,8 @@ from support.datasets.cifar10 import load_cifar10
 from support.logger.trainingmonitor import TrainingMonitor
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.optimizers import SGD
-from tensorflow.keras.callbacks import LearningRateScheduler
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
-import matplotlib.pyplot as plt
-import numpy as np
 import argparse
 import platform
 import os
