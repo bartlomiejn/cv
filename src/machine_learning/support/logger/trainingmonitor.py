@@ -26,12 +26,13 @@ class TrainingMonitor(BaseLogger):
     def on_epoch_end(self, epoch, logs=None):
         for k, v in logs.items():
             l = self.H.get(k, [])
-            l.append(v)
+            l.append(np.float64(v))
             self.H[k] = l
 
         if self.json_path is not None:
-            with open(self.json_path, "w") as f:
-                f.write(json.dumps(self.H))
+            f = open(self.json_path, "w")
+            json.dump(self.H, f)
+            f.close()
 
         if len(self.H["loss"]) > 1:
             N = np.arange(0, len(self.H["loss"]))

@@ -12,7 +12,6 @@ import numpy as np
 import argparse
 import platform
 import os
-import uuid
 
 
 ap = argparse.ArgumentParser()
@@ -21,11 +20,6 @@ ap.add_argument(
     "--output",
     required=True,
     help="Output loss/accuracy plot filename")
-ap.add_argument(
-    "-m",
-    "--modelname",
-    required=True,
-    help="Model file to save or load if the file already exists")
 args = vars(ap.parse_args())
 
 print(f"PID: {os.getpid()} Loading CIFAR-10")
@@ -56,8 +50,9 @@ model.compile(loss="categorical_crossentropy", optimizer=sgd,
 print("Training network")
 
 epoch_count = 40
-fig_path = os.path.sep.join([args["output"], f"_{os.getpid()}.png"])
-json_path = os.path.sep.join([args["output"], f"_{os.getpid()}.json"])
+fig_path = os.path.join(os.getcwd(), args["output"], f"minivggnet_cifar10_{os.getpid()}.png")
+json_path = os.path.join(os.getcwd(), args["output"], f"minivggnet_cifar10_{os.getpid()}.json")
+print(f"Figure path: {fig_path}, json_path: {json_path}")
 callbacks = [TrainingMonitor(fig_path, json_path=json_path)]
 
 H = model.fit(train_x, train_y, validation_data=(test_x, test_y),
@@ -75,6 +70,6 @@ print(classification_report(
 print("Serialize model and save to file")
 
 model_json = model.to_json()
-with open(f"{args['modelname']}.json", "w") as file:
+with open(f"{args['output']}.json", "w") as file:
     file.write(model_json)
-model.save_weights(f"{args['modelname']}.h5")
+model.save_weights(f"{args['output']}.h5")
