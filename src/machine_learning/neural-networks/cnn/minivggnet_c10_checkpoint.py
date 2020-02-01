@@ -59,16 +59,21 @@ fig_fn = os.path.join(os.getcwd(), args["output"],
     f"minivggnet_cifar10_checkpoint_{os.getpid()}.png")
 json_fn = os.path.join(os.getcwd(), args["output"],
     f"minivggnet_cifar10_checkpoint_{os.getpid()}.json")
-callbacks = [TrainingMonitor(fig_fn, json_path=json_fn)]
-print(f"Figure path: {fig_fn}, json_path: {json_fn}")
+monitor = [TrainingMonitor(fig_fn, json_path=json_fn)]
 
-checkpoint_fn = os.path.join(
-    os.getcwd(), args["weights"], "weights-{epoch:03d}-{val_loss:.4f}.hdf5")
-checkpoint = ModelCheckpoint(checkpoint_fn, monitor="val_loss", mode="min",
+checkpoint_fn = os.path.join(os.getcwd(), args["weights"],
+    "minivggnet_cifar10_{epoch:03d}_{val_accuracy:.4f}.hdf5")
+checkpoint = ModelCheckpoint(checkpoint_fn, monitor="val_accuracy", mode="min",
     save_best_only=True, verbose=1)
 
-H = model.fit(train_x, train_y, validation_data=(test_x, test_y),
-    batch_size=128, epochs=epoch_count, callbacks=[checkpoint], verbose=2)
+H = model.fit(
+    train_x,
+    train_y,
+    validation_data=(test_x, test_y),
+    batch_size=128,
+    epochs=epoch_count,
+    callbacks=[monitor, checkpoint],
+    verbose=2)
 
 print("Evaluating network")
 
