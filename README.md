@@ -8,3 +8,7 @@ Usage of classical computer vision techniques and machine/deep learning for imag
   - Linear
   - Neural networks
   - Convolutional neural networks
+
+Required packages for building any of the above examples:
+
+`cmake pkg-config wget jpeg libpng libtiff openexr eigen tbb hdf5`
