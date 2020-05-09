@@ -6,13 +6,13 @@ Usage of classical computer vision techniques or machine/deep learning for:
 - Object recognition 
 - Classification
 
-# Building (macOS)
+### Building (macOS)
 
 Required packages for building any of the above examples: `cmake pkg-config wget jpeg libpng libtiff openexr eigen tbb hdf5`
 
 `make setup`
 
-# Running
+### Running
 
 `make run SRC={script path}`
 
