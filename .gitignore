@@ -1,8 +1,7 @@
 __pycache__/
 
-**/.idea
-.idea
 .vscode
+.idea 
 
 output
 contrib

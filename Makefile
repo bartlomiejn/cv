@@ -1,21 +1,21 @@
 PYTHON ?= /usr/local/bin/python3
 CMAKE ?= cmake
+OCV_VER ?= 4.3.0
+JLEVEL ?= 10
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 VENV_DIR := $(ROOT_DIR)/venv
 OUTPUT_DIR := $(ROOT_DIR)/output
-CONTRIB_DIR := $(ROOT_DIR)/contrib
 
 VENV_ACTIVATE := $(VENV_DIR)/bin/activate
 VENV_PYTHON := $(VENV_DIR)/bin/python
 
-OCV_VER := 3.4.4
 OCV_URL := https://github.com/opencv/opencv/archive/$(OCV_VER).tar.gz
 OCV_CONTRIB_URL := https://github.com/opencv/opencv_contrib/archive/$(OCV_VER).tar.gz
 OCV_ARCHIVE := output/opencv.tar.gz
 OCV_CONTRIB_ARCHIVE := output/opencv_contrib.tar.gz
-OCV_DIR := $(CONTRIB_DIR)/opencv-3.4.4
-OCV_CONTRIB_DIR := $(CONTRIB_DIR)/opencv-contrib-3.4.4
+OCV_DIR := $(OUTPUT_DIR)/opencv-$(OCV_VER)
+OCV_CONTRIB_DIR := $(OUTPUT_DIR)/opencv-contrib-$(OCV_VER)
 OCV_CONTRIB_MODULES := $(OCV_CONTRIB_DIR)/opencv-$(OCV_VER)/modules
 
 $(CONTRIB_DIR):
@@ -34,8 +34,8 @@ $(OCV_DIR): $(CONTRIB_DIR) $(OCV_ARCHIVE) $(OCV_CONTRIB_ARCHIVE)
 	test -d $@ || ( \
 		mkdir -pv $@; \
 		mkdir -pv $(OCV_CONTRIB_DIR); \
-		tar xvzf $(OCV_ARCHIVE) -C $(CONTRIB_DIR); \
-		tar xvzf $(OCV_CONTRIB_ARCHIVE) -C $(OCV_CONTRIB_DIR); \
+		tar -xzf $(OCV_ARCHIVE) -C $(OUTPUT_DIR); \
+		tar -xzf $(OCV_CONTRIB_ARCHIVE) -C $(OCV_CONTRIB_DIR); \
 	)
 
 $(VENV_ACTIVATE):
@@ -47,35 +47,34 @@ $(VENV_ACTIVATE):
  
 opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	mkdir -pv $(OCV_DIR)/build
-	( \
-		source $(VENV_ACTIVATE); \
-		cd $(OCV_DIR)/build && $(CMAKE) \
-			-D CMAKE_BUILD_TYPE=RELEASE \
-			-D CMAKE_INSTALL_PREFIX=/usr/local \
-			-D OPENCV_EXTRA_MODULES_PATH=$(OCV_CONTRIB_MODULES) \
-			-D PYTHON3_LIBRARY=$(shell python pythonlib.py) \
-			-D PYTHON3_INCLUDE_DIR=$(shell python include.py) \
-			-D PYTHON3_EXECUTABLE=$(VENV_PYTHON) \
-			-D BUILD_opencv_python2=OFF \
-			-D BUILD_opencv_python3=ON \
-			-D INSTALL_PYTHON_EXAMPLES=ON \
-			-D INSTALL_C_EXAMPLES=OFF \
-			-D OPENCV_ENABLE_NONFREE=ON \
-			-D BUILD_EXAMPLES=ON ..; \
-	)
+	mkdir -pv $(OUTPUT_DIR)/obj-opencv-$(OCV_VER)
+	cd $(OCV_DIR)/build && $(CMAKE) \
+		-DCMAKE_BUILD_TYPE=RELEASE \
+		-DCMAKE_INSTALL_PREFIX=$(OUTPUT_DIR)/obj-opencv-$(OCV_VER) \
+		-DPYTHON3_LIBRARY=$(shell $(VENV_PYTHON) pythonlib.py) \
+		-DPYTHON3_INCLUDE_DIR=$(shell $(VENV_PYTHON) include.py) \
+		-DPYTHON3_EXECUTABLE=$(VENV_PYTHON) \
+		-DBUILD_opencv_python2=OFF \
+		-DBUILD_opencv_python3=ON \
+		-DINSTALL_PYTHON_EXAMPLES=ON \
+		-DINSTALL_C_EXAMPLES=OFF \
+		-DOPENCV_ENABLE_NONFREE=ON \
+		-DBUILD_EXAMPLES=ON \
+		.. 
+	cd $(OCV_DIR)/build && $(MAKE) -j$(JLEVEL)
 
 venv: $(VENV_ACTIVATE)
 
-setup: $(VENV_ACTIVATE) opencv
+setup: venv opencv
 
 run/%: $(VENV_ACTIVATE) $(OUTPUT_DIR)
 	( \
 		source $(VENV_ACTIVATE); \
 		$(PYTHON) $(notdir $*); \
-	)	
+	)
 
-clean-contrib:
-	rm -rf $(CONTRIB_DIR)
+clean-venv:
+	rm -rf $(VENV_DIR)
 
 clean-output:
 	rm -rf $(OUTPUT_DIR)
