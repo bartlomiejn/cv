@@ -48,20 +48,22 @@ $(VENV_ACTIVATE):
 opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	mkdir -pv $(OCV_DIR)/build
 	mkdir -pv $(OUTPUT_DIR)/obj-opencv-$(OCV_VER)
-	cd $(OCV_DIR)/build && $(CMAKE) \
-		-DCMAKE_BUILD_TYPE=RELEASE \
-		-DCMAKE_INSTALL_PREFIX=$(OUTPUT_DIR)/obj-opencv-$(OCV_VER) \
-		-DPYTHON3_LIBRARY=$(shell $(VENV_PYTHON) pythonlib.py) \
-		-DPYTHON3_INCLUDE_DIR=$(shell $(VENV_PYTHON) include.py) \
-		-DPYTHON3_EXECUTABLE=$(VENV_PYTHON) \
-		-DBUILD_opencv_python2=OFF \
-		-DBUILD_opencv_python3=ON \
-		-DINSTALL_PYTHON_EXAMPLES=ON \
-		-DINSTALL_C_EXAMPLES=OFF \
-		-DOPENCV_ENABLE_NONFREE=ON \
-		-DBUILD_EXAMPLES=ON \
-		.. 
-	cd $(OCV_DIR)/build && $(MAKE) -j$(JLEVEL)
+	source $(VENV_ACTIVATE) \
+		&& cd $(OCV_DIR)/build \
+		&& $(CMAKE) \
+			-DCMAKE_BUILD_TYPE=RELEASE \
+			-DCMAKE_INSTALL_PREFIX=$(OUTPUT_DIR)/obj-opencv-$(OCV_VER) \
+			-DPYTHON3_LIBRARY=$(shell $(VENV_PYTHON) pythonlib.py) \
+			-DPYTHON3_INCLUDE_DIR=$(shell $(VENV_PYTHON) include.py) \
+			-DPYTHON3_EXECUTABLE=$(VENV_PYTHON) \
+			-DBUILD_opencv_python2=OFF \
+			-DBUILD_opencv_python3=ON \
+			-DINSTALL_PYTHON_EXAMPLES=ON \
+			-DINSTALL_C_EXAMPLES=OFF \
+			-DOPENCV_ENABLE_NONFREE=ON \
+			-DBUILD_EXAMPLES=ON \
+			.. \
+		&& $(MAKE) -j$(JLEVEL)
 
 venv: $(VENV_ACTIVATE)
 
