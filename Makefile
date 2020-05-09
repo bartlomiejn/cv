@@ -18,9 +18,6 @@ OCV_DIR := $(CONTRIB_DIR)/opencv-3.4.4
 OCV_CONTRIB_DIR := $(CONTRIB_DIR)/opencv-contrib-3.4.4
 OCV_CONTRIB_MODULES := $(OCV_CONTRIB_DIR)/opencv-$(OCV_VER)/modules
 
-PYTHON_LIB := $(shell python pythonlib.py)
-PYTHON_INCLUDE := $(shell python include.py)
-
 $(CONTRIB_DIR):
 	mkdir -pv $@
 
@@ -56,8 +53,8 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 			-D CMAKE_BUILD_TYPE=RELEASE \
 			-D CMAKE_INSTALL_PREFIX=/usr/local \
 			-D OPENCV_EXTRA_MODULES_PATH=$(OCV_CONTRIB_MODULES) \
-			-D PYTHON3_LIBRARY=$(PYTHON_LIB) \
-			-D PYTHON3_INCLUDE_DIR=$(PYTHON_INCLUDE) \
+			-D PYTHON3_LIBRARY=$(shell python pythonlib.py) \
+			-D PYTHON3_INCLUDE_DIR=$(shell python include.py) \
 			-D PYTHON3_EXECUTABLE=$(VENV_PYTHON) \
 			-D BUILD_opencv_python2=OFF \
 			-D BUILD_opencv_python3=ON \
