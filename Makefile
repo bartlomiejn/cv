@@ -4,10 +4,10 @@ OCV_VER ?= 4.3.0
 JLEVEL ?= 10
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-VENV_DIR := $(ROOT_DIR)/venv
 CONFIG_DIR := $(ROOT_DIR)/config
 OUTPUT_DIR := $(ROOT_DIR)/output
 MPL_DIR := $(CONFIG_DIR)/.matplotlib
+VENV_DIR := $(OUTPUT_DIR)/venv
 OCV_DIR := $(OUTPUT_DIR)/opencv-$(OCV_VER)
 OCV_CONTRIB_DIR := $(OUTPUT_DIR)/opencv-contrib-$(OCV_VER)
 OCV_CONTRIB_MOD_DIR := $(OCV_CONTRIB_DIR)/opencv-$(OCV_VER)/modules
