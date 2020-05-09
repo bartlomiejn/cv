@@ -1,16 +1,15 @@
-import sys; sys.path.insert(0, '../..')
-
 from support.nn.lenet import LeNet
+import argparse
+import os
+import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from keras import backend as K
 from keras.optimizers import SGD
 from scipy.io import loadmat
-import matplotlib.pyplot as plt
-import numpy as np
-import argparse
-import os
+
 
 ap = argparse.ArgumentParser()
 ap.add_argument(

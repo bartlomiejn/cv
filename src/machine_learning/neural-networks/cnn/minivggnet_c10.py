@@ -2,7 +2,6 @@ import argparse
 import platform
 import matplotlib.pyplot as plt
 import numpy as np
-from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.optimizers import SGD
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
@@ -25,10 +24,7 @@ args = vars(ap.parse_args())
 
 print("Loading CIFAR-10")
 
-if platform.system() == "Darwin":
-    (train_x, train_y), (test_x, test_y) = load_cifar10("../../../../datasets/cifar10")
-else:
-    (train_x, train_y), (test_x, test_y) = cifar10.load_data()
+(train_x, train_y), (test_x, test_y) = load_cifar10()
 
 train_x = train_x.astype("float") / 255.0
 test_x = test_x.astype("float") / 255.0

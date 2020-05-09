@@ -1,17 +1,13 @@
-from tensorflow.keras.datasets import cifar10
+import argparse
+import platform
+import os
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import ModelCheckpoint
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
-import argparse
-import platform
-import os
-import sys
-sys.path.insert(0, '.')
 from support.nn.minivggnet import MiniVGGNet
-from support.datasets.cifar10 import load_cifar10
 from support.logger.trainingmonitor import TrainingMonitor
-
+from support.datasets.cifar10 import load_cifar10
 
 ap = argparse.ArgumentParser()
 ap.add_argument(
@@ -28,11 +24,7 @@ args = vars(ap.parse_args())
 
 print(f"PID: {os.getpid()} Loading CIFAR-10")
 
-if platform.system() == "Darwin":
-    (train_x, train_y), (test_x, test_y) = \
-        load_cifar10("../../../../datasets/cifar10")
-else:
-    (train_x, train_y), (test_x, test_y) = cifar10.load_data()
+(train_x, train_y), (test_x, test_y) = load_cifar10()
 
 train_x = train_x.astype("float") / 255.0
 test_x = test_x.astype("float") / 255.0

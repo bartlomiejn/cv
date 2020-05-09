@@ -1,9 +1,12 @@
+ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
 PYTHON ?= /usr/local/bin/python3
 CMAKE ?= cmake
 OCV_VER ?= 4.3.0
 JLEVEL ?= 10
+DATASETS ?= $(ROOT_DIR)/datasets
 
-ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+SRC_DIR := $(ROOT_DIR)/src
 CONFIG_DIR := $(ROOT_DIR)/config
 OUTPUT_DIR := $(ROOT_DIR)/output
 MPL_DIR := $(OUTPUT_DIR)/matplotlib
@@ -26,7 +29,8 @@ VENV_PYTHON_ENV = \
 	MPLBACKEND=TkAgg \
 	MPLCONFIGDIR=$(MPL_DIR) \
 	KERAS_HOME=$(KERAS_DIR) \
-	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_DIR)
+	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_DIR) \
+	DATASETS=$(DATASETS)
 VENV_REQUIREMENTS := $(ROOT_DIR)/requirements.txt
 
 OCV_URL := https://github.com/opencv/opencv/archive/$(OCV_VER).tar.gz
@@ -97,12 +101,12 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 
 setup: venv opencv
 
-run: $(VENV_ACTIVATE) $(OUTPUT_DIR)
+run: $(OUTPUT_DIR)
 ifeq ($(SRC),)
 	$(error Set SRC={source file path} to run a script.)
 endif
 	source $(VENV_ACTIVATE) \
-		&& $(VENV_PYTHON_ENV) python $(ROOT_DIR)/$(SRC) $(PARAMS)
+		&& $(VENV_PYTHON_ENV) python $(SRC_DIR)/$(SRC) $(PARAMS)
 
 clean-venv:
 	rm -rf $(VENV_DIR)
