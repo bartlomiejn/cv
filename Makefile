@@ -82,6 +82,8 @@ $(VENV_ACTIVATE): $(OUTPUT_DIR)
 	)
 	source $(VENV_ACTIVATE) && pip install -r $(VENV_REQUIREMENTS)
  
+venv: $(MPL_DIR) $(KERAS_CFG) $(VENV_ACTIVATE)
+
 opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	mkdir -pv $(OCV_DIR)/build
 	mkdir -pv $(OCV_OBJ_DIR)
@@ -93,7 +95,7 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	ln -s $(OCV_LIB) $(VENV_OCV_SYMLINK)
 	$(VENV_PYTHON) -c "import cv2; print(cv2.__version__)"
 
-venv: $(MPL_DIR) $(KERAS_CFG) $(VENV_ACTIVATE)
+setup: venv opencv
 
 run: $(VENV_ACTIVATE) $(OUTPUT_DIR)
 ifeq ($(SRC),)
