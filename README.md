@@ -8,9 +8,9 @@ Usage of classical computer vision techniques or machine/deep learning for:
 
 ### Building (macOS)
 
-Required packages for building any of the above examples: `cmake pkg-config wget jpeg libpng libtiff openexr eigen tbb hdf5`
+Required packages: `cmake pkg-config wget jpeg libpng libtiff openexr eigen tbb hdf5`
 
-`make setup`
+Venv & OpenCV setup: `make setup`
 
 ### Running
 
