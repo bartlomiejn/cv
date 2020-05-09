@@ -6,12 +6,15 @@ JLEVEL ?= 10
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 CONFIG_DIR := $(ROOT_DIR)/config
 OUTPUT_DIR := $(ROOT_DIR)/output
-MPL_DIR := $(CONFIG_DIR)/.matplotlib
+MPL_DIR := $(OUTPUT_DIR)/matplotlib
+KERAS_DIR := $(OUTPUT_DIR)/keras
 VENV_DIR := $(OUTPUT_DIR)/venv
 OCV_DIR := $(OUTPUT_DIR)/opencv-$(OCV_VER)
 OCV_CONTRIB_DIR := $(OUTPUT_DIR)/opencv-contrib-$(OCV_VER)
 OCV_CONTRIB_MOD_DIR := $(OCV_CONTRIB_DIR)/opencv-$(OCV_VER)/modules
 OCV_OBJ_DIR := $(OUTPUT_DIR)/obj-opencv-$(OCV_VER)
+
+KERAS_CFG := $(KERAS_DIR)/keras.json
 
 SRC_DIR := $(ROOT_DIR)/src
 SRC_ML_DIR := $(SRC_DIR)/machine_learning
@@ -22,6 +25,7 @@ VENV_PYTHON_VER = $(shell $(VENV_PYTHON) -c "import sys; print(f'{sys.version_in
 VENV_PYTHON_ENV = \
 	MPLBACKEND=TkAgg \
 	MPLCONFIGDIR=$(MPL_DIR) \
+	KERAS_HOME=$(KERAS_DIR) \
 	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_DIR)
 VENV_REQUIREMENTS := $(ROOT_DIR)/requirements.txt
 
@@ -50,6 +54,12 @@ $(OUTPUT_DIR):
 
 $(MPL_DIR): $(OUTPUT_DIR)
 	mkdir -pv $@
+
+$(KERAS_DIR): $(OUTPUT_DIR)
+	mkdir -pv $@
+
+$(KERAS_CFG): $(KERAS_DIR)
+	cp -f $(ROOT_DIR)/keras.json $@
 
 $(OCV_ARCHIVE): $(OUTPUT_DIR)
 	test -f $@ || wget -O $@ $(OCV_URL)
@@ -83,7 +93,7 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	ln -s $(OCV_LIB) $(VENV_OCV_SYMLINK)
 	$(VENV_PYTHON) -c "import cv2; print(cv2.__version__)"
 
-venv: $(MPL_DIR) $(VENV_ACTIVATE)
+venv: $(MPL_DIR) $(KERAS_CFG) $(VENV_ACTIVATE)
 
 run: $(VENV_ACTIVATE) $(OUTPUT_DIR)
 ifeq ($(SRC),)
