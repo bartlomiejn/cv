@@ -1,14 +1,13 @@
-import sys; sys.path.insert(0, '../..')
-from support.nn.minivggnet import MiniVGGNet
-from support.datasets.cifar10 import load_cifar10
+import argparse
+import platform
+import matplotlib.pyplot as plt
+import numpy as np
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.optimizers import SGD
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
-import matplotlib.pyplot as plt
-import numpy as np
-import argparse
-import platform
+from support.nn.minivggnet import MiniVGGNet
+from support.datasets.cifar10 import load_cifar10
 
 
 ap = argparse.ArgumentParser()

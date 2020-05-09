@@ -14,7 +14,7 @@ OCV_CONTRIB_MOD_DIR := $(OCV_CONTRIB_DIR)/opencv-$(OCV_VER)/modules
 OCV_OBJ_DIR := $(OUTPUT_DIR)/obj-opencv-$(OCV_VER)
 
 SRC_DIR := $(ROOT_DIR)/src
-SRC_ML_SUPPORT_DIR := $(SRC_DIR)/machine_learning/support
+SRC_ML_DIR := $(SRC_DIR)/machine_learning
 
 VENV_ACTIVATE := $(VENV_DIR)/bin/activate
 VENV_PYTHON := $(VENV_DIR)/bin/python
@@ -22,7 +22,7 @@ VENV_PYTHON_VER = $(shell $(VENV_PYTHON) -c "import sys; print(f'{sys.version_in
 VENV_PYTHON_ENV = \
 	MPLBACKEND=TkAgg \
 	MPLCONFIGDIR=$(MPL_DIR) \
-	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_SUPPORT_DIR)
+	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_DIR)
 VENV_REQUIREMENTS := $(ROOT_DIR)/requirements.txt
 
 OCV_URL := https://github.com/opencv/opencv/archive/$(OCV_VER).tar.gz
@@ -85,8 +85,12 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 
 venv: $(MPL_DIR) $(VENV_ACTIVATE)
 
-run/%: $(VENV_ACTIVATE) $(OUTPUT_DIR)
-	source $(VENV_ACTIVATE) && $(VENV_PYTHON_ENV) python $* $(PARAMS)
+run: $(VENV_ACTIVATE) $(OUTPUT_DIR)
+ifeq ($(SRC),)
+	$(error Set SRC={source file path} to run a script.)
+endif
+	source $(VENV_ACTIVATE) \
+		&& $(VENV_PYTHON_ENV) python $(ROOT_DIR)/$(SRC) $(PARAMS)
 
 clean-venv:
 	rm -rf $(VENV_DIR)

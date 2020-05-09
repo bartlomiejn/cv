@@ -1,9 +1,9 @@
-import sys; sys.path.insert(0, '../..')
-from support.nn.neuralnetwork import NeuralNetwork
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import datasets
+from support.nn.neuralnetwork import NeuralNetwork
+
 
 print("Loading MNIST sample dataset")
 

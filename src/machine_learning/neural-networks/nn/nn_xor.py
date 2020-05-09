@@ -1,6 +1,6 @@
-import sys; sys.path.insert(0, '../..')
-from support.nn.neuralnetwork import NeuralNetwork
 import numpy as np
+from support.nn.neuralnetwork import NeuralNetwork
+
 
 # XOR dataset
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])

@@ -1,4 +1,8 @@
-import sys; sys.path.insert(0, '../..')
+import argparse
+import os
+import platform
+import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
 from support.nn.shallownet import ShallowNet
@@ -6,11 +10,6 @@ from tensorflow.keras.optimizers import SGD
 from tensorflow.keras import backend as K
 from tensorflow.keras.datasets.cifar import load_batch
 from tensorflow.keras.datasets import cifar10
-import matplotlib.pyplot as plt
-import numpy as np
-import argparse
-import os
-import platform
 
 
 def load_cifar10():
