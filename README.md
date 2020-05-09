@@ -14,5 +14,5 @@ Venv & OpenCV setup: `make setup`
 
 ### Running
 
-`make run SRC={script path}`
+`make run SRC={script path} PARAMS={optional params}`
 
