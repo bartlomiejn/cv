@@ -23,12 +23,13 @@ VENV_PYTHON_ENV = \
 	MPLBACKEND=TkAgg \
 	MPLCONFIGDIR=$(MPL_DIR) \
 	PYTHONPATH=$(PYTHONPATH):$(SRC_ML_SUPPORT_DIR)
+VENV_REQUIREMENTS := $(ROOT_DIR)/requirements.txt
 
 OCV_URL := https://github.com/opencv/opencv/archive/$(OCV_VER).tar.gz
 OCV_CONTRIB_URL := https://github.com/opencv/opencv_contrib/archive/$(OCV_VER).tar.gz
 OCV_ARCHIVE := output/opencv.tar.gz
 OCV_CONTRIB_ARCHIVE := output/opencv_contrib.tar.gz
-OCV_CMAKE_PARAMS := \
+OCV_CMAKE_PARAMS = \
 	-DCMAKE_BUILD_TYPE=RELEASE \
 	-DCMAKE_INSTALL_PREFIX=$(OCV_OBJ_DIR) \
 	-DPYTHON3_LIBRARY=$(shell $(VENV_PYTHON) pythonlib.py) \
@@ -41,8 +42,8 @@ OCV_CMAKE_PARAMS := \
 	-DOPENCV_ENABLE_NONFREE=ON \
 	-DBUILD_EXAMPLES=ON
 OCB_LIB_VER = $(shell $(VENV_PYTHON) -c "import sys; print(f'{sys.version_info.major}{sys.version_info.minor}m')")
-OCV_LIB := $(OCV_OBJ_DIR)/lib/python$(VENV_PYTHON_VER)/site-packages/cv2/python-$(VENV_PYTHON_VER)/cv2.cpython-$(OCB_LIB_VER)-darwin.so
-VENV_OCV_SYMLINK := $(VENV_DIR)/lib/python$(VENV_PYTHON_VER)/site-packages/cv2.so
+OCV_LIB = $(OCV_OBJ_DIR)/lib/python$(VENV_PYTHON_VER)/site-packages/cv2/python-$(VENV_PYTHON_VER)/cv2.cpython-$(OCB_LIB_VER)-darwin.so
+VENV_OCV_SYMLINK = $(VENV_DIR)/lib/python$(VENV_PYTHON_VER)/site-packages/cv2.so
 
 $(OUTPUT_DIR):
 	mkdir -pv $@
@@ -64,12 +65,12 @@ $(OCV_DIR): $(OCV_ARCHIVE) $(OCV_CONTRIB_ARCHIVE)
 		tar -xzf $(OCV_CONTRIB_ARCHIVE) -C $(OCV_CONTRIB_DIR); \
 	)
 
-$(VENV_ACTIVATE):
+$(VENV_ACTIVATE): $(OUTPUT_DIR)
 	test -d $(VENV_DIR) || ( \
 		mkdir -pv $(VENV_DIR); \
 		$(PYTHON) -m venv $(VENV_DIR); \
-		$(PYTHON) -m pip install -U pip; \
 	)
+	source $(VENV_ACTIVATE) && pip install -r $(VENV_REQUIREMENTS)
  
 opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 	mkdir -pv $(OCV_DIR)/build
@@ -84,13 +85,11 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 
 venv: $(MPL_DIR) $(VENV_ACTIVATE)
 
-setup: venv opencv
-
 run/%: $(VENV_ACTIVATE) $(OUTPUT_DIR)
 	source $(VENV_ACTIVATE) && $(VENV_PYTHON_ENV) python $* $(PARAMS)
 
 clean-venv:
 	rm -rf $(VENV_DIR)
 
-clean-output:
+clean:
 	rm -rf $(OUTPUT_DIR)
