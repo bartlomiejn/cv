@@ -88,7 +88,7 @@ $(VENV_ACTIVATE): $(OUTPUT_DIR)
  
 venv: $(MPL_DIR) $(KERAS_CFG) $(VENV_ACTIVATE)
 
-opencv: $(OCV_DIR) $(VENV_ACTIVATE)
+opencv: $(OCV_DIR) venv
 	mkdir -pv $(OCV_DIR)/build
 	mkdir -pv $(OCV_OBJ_DIR)
 	source $(VENV_ACTIVATE) \
@@ -98,6 +98,9 @@ opencv: $(OCV_DIR) $(VENV_ACTIVATE)
 		&& $(MAKE) install
 	ln -s $(OCV_LIB) $(VENV_OCV_SYMLINK)
 	$(VENV_PYTHON) -c "import cv2; print(cv2.__version__)"
+
+gen-opencv-symlink:
+	ln -s $(OCV_LIB) $(VENV_OCV_SYMLINK)
 
 setup: venv opencv
 
