@@ -96,7 +96,7 @@ opencv: $(OCV_DIR) venv
 		&& $(CMAKE) $(OCV_CMAKE_PARAMS) .. \
 		&& $(MAKE) -j$(JLEVEL) \
 		&& $(MAKE) install
-	ln -s $(OCV_LIB) $(VENV_OCV_SYMLINK)
+	$(MAKE) gen-opencv-symlink
 	$(VENV_PYTHON) -c "import cv2; print(cv2.__version__)"
 
 gen-opencv-symlink:
@@ -108,8 +108,8 @@ run: $(OUTPUT_DIR)
 ifeq ($(SRC),)
 	$(error Set SRC={source file path} to run a script.)
 endif
-	source $(VENV_ACTIVATE) \
-		&& $(VENV_PYTHON_ENV) python $(SRC_DIR)/$(SRC) $(PARAMS)
+	source $(VENV_ACTIVATE) && $(VENV_PYTHON_ENV) python $(SRC_DIR)/$(SRC) \
+		$(PARAMS)
 
 clean-venv:
 	rm -rf $(VENV_DIR)
